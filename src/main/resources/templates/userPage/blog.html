@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head th:replace="/layout/user/index::head"></head>
+  <body>
+  <div th:replace="/layout/user/index::headerVT"></div>
+    <div class="container">
+      <div class="row">
+        <!-- Latest Posts -->
+        <main class="posts-listing col-lg-8"> 
+          <div class="container">
+            <div class="row">
+              <!-- post -->
+              <th:block th:each="blog : ${blogList}">
+              <div class="post col-xl-6">
+                <div class="post-thumbnail"><a th:href="@{/post/__${blog.id}__}"><img src="/user/img/blog-post-1.jpeg" alt="..." class="img-fluid"></a></div>
+                <div class="post-details">
+                  <div class="post-meta d-flex justify-content-between">
+                    <div class="date meta-last">20 May | 2016</div>
+                    <div class="category"><a th:href="@{/blogUser/__${blog.category.id}__}"><span th:text="${blog.category.name}"></span></a></div>
+                  </div><a th:href="@{/post/__${blog.id}__}">
+                    <h3 class="h4" th:text="${blog.blogName}"></h3></a>
+                  <p class="text-muted" th:text="${blog.description}"></p>
+                  <footer class="post-footer d-flex align-items-center"><a href="#" class="author d-flex align-items-center flex-wrap">
+                      <div class="avatar"><img src="/user/img/avatar-3.jpg" alt="..." class="img-fluid"></div>
+                      <div class="title"><span>John Doe</span></div></a>
+                    <div class="date"><i class="icon-clock"></i> 2 months ago</div>
+                    <div class="comments meta-last"><i class="icon-comment"></i>12</div>
+                  </footer>
+                </div>
+              </div>
+              </th:block>
+            </div>
+            <!-- Pagination -->
+            <nav aria-label="Page navigation example">
+              <ul class="pagination pagination-template d-flex justify-content-center">
+                <li class="page-item"><a href="#" class="page-link"> <i class="fa fa-angle-left"></i></a></li>
+                <li class="page-item"><a href="#" class="page-link active">1</a></li>
+                <li class="page-item"><a href="#" class="page-link">2</a></li>
+                <li class="page-item"><a href="#" class="page-link">3</a></li>
+                <li class="page-item"><a href="#" class="page-link"> <i class="fa fa-angle-right"></i></a></li>
+              </ul>
+            </nav>
+          </div>
+        </main>
+        <aside class="col-lg-4" th:fragment="colLeft">
+          <!-- Widget [Search Bar Widget]-->
+          <div class="widget search">
+            <header>
+              <h3 class="h6">Search the blog</h3>
+            </header>
+            <form class="search-form">
+              <div class="form-group">
+                <input type="search" placeholder="What are you looking for?" name="s">
+                <button type="submit" class="submit"><i class="icon-search"></i></button>
+              </div>
+            </form>
+          </div>
+          <!-- Widget [Latest Posts Widget]        -->
+          <div class="widget latest-posts">
+            <header>
+              <h3 class="h6">Latest Posts</h3>
+            </header>
+            <div class="blog-posts"><a href="#">
+                <div class="item d-flex align-items-center">
+                  <div class="image"><img src="/user/img/small-thumbnail-1.jpg" alt="..." class="img-fluid"></div>
+                  <div class="title"><strong>Alberto Savoia Can Teach You About</strong>
+                    <div class="d-flex align-items-center">
+                      <div class="views"><i class="icon-eye"></i> 500</div>
+                      <div class="comments"><i class="icon-comment"></i>12</div>
+                    </div>
+                  </div>
+                </div></a><a href="#">
+                <div class="item d-flex align-items-center">
+                  <div class="image"><img src="/user/img/small-thumbnail-2.jpg" alt="..." class="img-fluid"></div>
+                  <div class="title"><strong>Alberto Savoia Can Teach You About</strong>
+                    <div class="d-flex align-items-center">
+                      <div class="views"><i class="icon-eye"></i> 500</div>
+                      <div class="comments"><i class="icon-comment"></i>12</div>
+                    </div>
+                  </div>
+                </div></a><a href="#">
+                <div class="item d-flex align-items-center">
+                  <div class="image"><img src="/user/img/small-thumbnail-3.jpg" alt="..." class="img-fluid"></div>
+                  <div class="title"><strong>Alberto Savoia Can Teach You About</strong>
+                    <div class="d-flex align-items-center">
+                      <div class="views"><i class="icon-eye"></i> 500</div>
+                      <div class="comments"><i class="icon-comment"></i>12</div>
+                    </div>
+                  </div>
+                </div></a></div>
+          </div>
+          <!-- Widget [Categories Widget]-->
+          <div class="widget categories">
+            <header>
+              <h3 class="h6">Categories</h3>
+            </header>
+            <th:block th:each="count : ${iCountBlogs}">
+              <div class="item d-flex justify-content-between"><a th:href="@{/blogUser/__${count.id}__}" th:text="${count.name}"></a><span th:text="${count.count}"></span></div>
+            </th:block>
+          </div>
+          <!-- Widget [Tags Cloud Widget]-->
+          <div class="widget tags">       
+            <header>
+              <h3 class="h6">Tags</h3>
+            </header>
+            <ul class="list-inline">
+              <th:block th:each="category : ${categoryList}">
+                <li class="list-inline-item"><a th:href="@{/blogUser/__${category.id}__}" class="tag"><span th:text="${category.name}"></span></a></li>
+              </th:block>
+            </ul>
+          </div>
+        </aside>
+      </div>
+    </div>
+    <!-- Page Footer-->
+  <footer th:replace="/layout/user/index::PageFooter"></footer>
+    <!-- JavaScript files-->
+  <div th:replace="/layout/user/index::js_source"></div>
+  </body>
+</html>

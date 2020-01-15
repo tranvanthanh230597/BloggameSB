@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head th:replace="/layout/admin/tables::head">
+</head>
+<body id="page-top">
+<div th:replace="/layout/admin/tables::navbar"></div>
+<div id="wrapper">
+    <div th:replace="/layout/admin/tables::Sidebar"></div>
+    <div id="content-wrapper">
+        <div class="container-fluid">
+            <div th:replace="/layout/admin/tables::breadcrumb"></div>
+            <!-- DataTables Example -->
+            <div class="card mb-3">
+                <div class="card-header">
+                    <i class="fas fa-table"></i>
+                    Create new Category
+                </div>
+                <th:block th:if="${message}">
+                    <div class="alert alert-primary" role="alert">
+                        <p th:text="${message}"></p>
+                    </div>
+                </th:block>
+                <div class="card-body">
+                    <div class="table-responsive">
+                        <form th:action="@{/create-category}" th:object="${category}" method="post">
+                            <div class="form-group">
+                                <label>Name</label>
+                                <input type="text" th:field="*{name}" class="form-control" id="" placeholder="Name">
+                            </div>
+                            <button type="submit" class="btn btn-primary">Create</button>
+                            <a href="/category">
+                                <button type="button" class="btn btn-warning">Back</button>
+                            </a>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <p class="small text-center text-muted my-5">
+                <em>More table examples coming soon...</em>
+            </p>
+        </div>
+        <!-- /.container-fluid -->
+        <!-- Sticky Footer -->
+        <div th:replace="/layout/admin/tables::footer"></div>
+    </div>
+    <!-- /.content-wrapper -->
+    <div th:replace="/layout/admin/tables::logoutModal"></div>
+    <div th:replace="/layout/admin/tables::Scroll"></div>
+    <div th:replace="/layout/admin/tables::js_source"></div>
+</div>
+</body>
+</html>
