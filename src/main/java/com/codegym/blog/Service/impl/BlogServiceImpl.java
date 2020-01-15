@@ -1,10 +1,12 @@
 package com.codegym.blog.Service.impl;
 
+import com.codegym.blog.Model.ICountComment;
 import com.codegym.blog.Repository.BlogRepository;
 import com.codegym.blog.Service.BlogService;
 import com.codegym.blog.Model.Blog;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Repository;
+import org.thymeleaf.model.IComment;
 
 @Repository
 public class BlogServiceImpl implements BlogService {
@@ -53,5 +55,10 @@ public class BlogServiceImpl implements BlogService {
     @Override
     public Iterable<Blog> findAllByBlogNameContaining(String blogName) {
         return blogRepository.findAllByBlogNameContaining(blogName);
+    }
+
+    @Override
+    public Iterable<ICountComment> countComment(Long blogId) {
+        return blogRepository.countComment(blogId);
     }
 }

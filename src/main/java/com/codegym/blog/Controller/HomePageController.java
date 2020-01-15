@@ -1,17 +1,17 @@
 package com.codegym.blog.Controller;
 
 
-import com.codegym.blog.Model.Category;
-import com.codegym.blog.Model.ICountBlog;
+import com.codegym.blog.Model.*;
 import com.codegym.blog.Service.BlogService;
-import com.codegym.blog.Model.Blog;
 import com.codegym.blog.Service.CategoryService;
+import com.codegym.blog.Service.CommentService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.*;
 import org.springframework.web.servlet.ModelAndView;
 
 import java.util.ArrayList;
+import java.util.Iterator;
 import java.util.Optional;
 import java.util.Random;
 
@@ -21,6 +21,8 @@ public class HomePageController {
     BlogService blogService;
     @Autowired
     CategoryService categoryService;
+    @Autowired
+    CommentService commentService;
     @RequestMapping(value = "/home", method = RequestMethod.GET)
     public ModelAndView home(){
         Iterable<Blog> blogs = blogService.findAll();
@@ -65,6 +67,14 @@ public class HomePageController {
     @RequestMapping(value = "/post/{id}", method = RequestMethod.GET)
     public ModelAndView post(@PathVariable long id) {
         Iterable<ICountBlog> iCountBlogs = categoryService.countBlogs();
+        Iterable<Comment> comments = commentService.findAllByBlog_Id(id);
+        Iterable<ICountComment> countComments = blogService.countComment(id);
+        Long countOfComment = 0L;
+        Iterator<ICountComment> iter = countComments.iterator();
+        while(iter.hasNext()){
+            countOfComment = iter.next().getCount();
+        }
+
         Blog blog = blogService.findById(id);
         if (blog != null) {
             Iterable<Category> categories = categoryService.findAll();
@@ -73,6 +83,9 @@ public class HomePageController {
             Blog nextBlog = blogService.nextBlog(id);
 
             modelAndView.addObject("blog", blog);
+            modelAndView.addObject("countOfComment", countOfComment);
+            modelAndView.addObject("commentList", comments);
+            modelAndView.addObject("commentInfo",new Comment());
             modelAndView.addObject("previousBlog", previousBlog);
             modelAndView.addObject("nextBlog", nextBlog);
             modelAndView.addObject("categoryList", categories);
