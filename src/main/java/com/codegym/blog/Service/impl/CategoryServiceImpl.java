@@ -6,11 +6,10 @@ import com.codegym.blog.Repository.BlogRepository;
 import com.codegym.blog.Repository.CategoryRepository;
 import com.codegym.blog.Service.CategoryService;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.stereotype.Repository;
+import org.springframework.context.annotation.Configuration;
 
-import java.util.ArrayList;
 
-@Repository
+@Configuration
 public class CategoryServiceImpl implements CategoryService {
     @Autowired
     private CategoryRepository categoryRepository;

@@ -5,10 +5,9 @@ import com.codegym.blog.Repository.BlogRepository;
 import com.codegym.blog.Service.BlogService;
 import com.codegym.blog.Model.Blog;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.stereotype.Repository;
-import org.thymeleaf.model.IComment;
+import org.springframework.context.annotation.Configuration;
 
-@Repository
+@Configuration
 public class BlogServiceImpl implements BlogService {
     @Autowired
     private BlogRepository blogRepository;

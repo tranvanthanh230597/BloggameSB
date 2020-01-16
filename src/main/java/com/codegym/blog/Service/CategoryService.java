@@ -4,7 +4,6 @@ import com.codegym.blog.Model.Category;
 import com.codegym.blog.Model.ICountBlog;
 import org.springframework.stereotype.Service;
 
-import java.util.ArrayList;
 
 @Service
 public interface CategoryService {
