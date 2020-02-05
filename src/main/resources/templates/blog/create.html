@@ -29,7 +29,7 @@
                             </div>
                             <div class="form-group">
                                 <label>Description</label>
-                                <input type="text" th:field="*{description}" class="form-control" id="" placeholder="Name">
+                                <textarea type="text" th:field="*{description}" class="form-control"id="description" name="description"></textarea>
                             </div>
                             <div class="form-group">
                                 <label>Category: </label>
@@ -41,7 +41,7 @@
                             </div>
                             <div class="form-group">
                                 <label>Content</label>
-                                <input type="text" th:field="*{content}" class="form-control"placeholder="content">
+                                <textarea type="text" th:field="*{content}" class="form-control"id="content" name="content"></textarea>
                             </div>
                             <button type="submit" class="btn btn-primary">Create</button>
                             <a href="/blog">
@@ -69,6 +69,7 @@
     $(document).ready(
         function() {
             $('#content').summernote();
+            $('#description').summernote();
         }
     );
 </script>

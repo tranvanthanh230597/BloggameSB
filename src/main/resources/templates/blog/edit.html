@@ -30,18 +30,19 @@
                             </div>
                             <div class="form-group">
                                 <label>Description</label>
-                                <input type="text" th:field="*{description}" class="form-control" id="" placeholder="Name">
+                                <textarea type="text" th:field="*{description}" class="form-control"id="description" name="description"></textarea>
                             </div>
                             <div class="form-group">
                                 <label>Content</label>
-                                <input type="text" th:field="*{content}" class="form-control" id="" placeholder="Name">
+                                <textarea type="text" th:field="*{content}" class="form-control"id="content" name="content"></textarea>
                             </div>
                             <div class="form-group">
-                                <select name="category">
+                                <select name="category" class="form-control">
                                     <option th:each="c : ${category}"
                                             th:value="${c.id}"
                                             th:text="${c.name}"
-                                            th:selected="(${c.id} == *{category.id})"></option>
+                                            th:selected="(${c.id} == *{category.id})">
+                                    </option>
                                 </select>
                             </div>
                             <button type="submit" class="btn btn-primary">Update</button>
@@ -65,5 +66,14 @@
     <div th:replace="/layout/admin/tables::Scroll"></div>
     <div th:replace="/layout/admin/tables::js_source"></div>
 </div>
+
+<script>
+    $(document).ready(
+        function() {
+            $('#content').summernote();
+            $('#description').summernote();
+        }
+    );
+</script>
 </body>
 </html>

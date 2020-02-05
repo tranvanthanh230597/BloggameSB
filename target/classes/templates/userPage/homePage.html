@@ -17,7 +17,7 @@
                     <div class="content">
                         <header class="post-header">
                             <div class="category">
-                                <a th:href="@{/blogUser/__${blog.category.id}__}"><span th:text="${blog.category.name}"></span></a>
+                                <a th:href="@{/blogUser/__${blog.categoryId}__}"><span th:text="${blog.categoryName}"></span></a>
                             </div>
                             <a th:href="@{/post/__${blog.id}__}">
                                 <h2 class="h4" th:text="${blog.blogName}"></h2>
@@ -27,8 +27,8 @@
                         <footer class="post-footer d-flex align-items-center"><a href="#" class="author d-flex align-items-center flex-wrap">
                             <div class="avatar"><img src="/user/img/avatar-1.jpg" alt="..." class="img-fluid"></div>
                             <div class="title"><span>John Doe</span></div></a>
-                            <div class="date"><i class="icon-clock"></i> 2 months ago</div>
-                            <div class="comments"><i class="icon-comment"></i>12</div>
+                            <div class="date"><i class="icon-clock"></i><span th:text="${blog.date}"></span></div>
+                            <div class="comments"><i class="icon-eye"></i><span th:text="${blog.view}"></span></div>
                         </footer>
                     </div>
                 </div>
@@ -117,19 +117,19 @@
 <section class="gallery no-padding">
     <div class="row">
         <div class="mix col-lg-3 col-md-3 col-sm-6">
-            <div class="item"><a href="/user/img/gallery-1.jpg" data-fancybox="gallery" class="image"><img src="/source/user/img/gallery-1.jpg" alt="..." class="img-fluid">
+            <div class="item"><a href="/user/img/gallery-1.jpg" data-fancybox="gallery" class="image"><img src="/user/img/gallery-1.jpg" alt="..." class="img-fluid">
                 <div class="overlay d-flex align-items-center justify-content-center"><i class="icon-search"></i></div></a></div>
         </div>
         <div class="mix col-lg-3 col-md-3 col-sm-6">
-            <div class="item"><a href="/user/img/gallery-2.jpg" data-fancybox="gallery" class="image"><img src="/source/user/img/gallery-2.jpg" alt="..." class="img-fluid">
+            <div class="item"><a href="/user/img/gallery-2.jpg" data-fancybox="gallery" class="image"><img src="/user/img/gallery-2.jpg" alt="..." class="img-fluid">
                 <div class="overlay d-flex align-items-center justify-content-center"><i class="icon-search"></i></div></a></div>
         </div>
         <div class="mix col-lg-3 col-md-3 col-sm-6">
-            <div class="item"><a href="/user/img/gallery-3.jpg" data-fancybox="gallery" class="image"><img src="/source/user/img/gallery-3.jpg" alt="..." class="img-fluid">
+            <div class="item"><a href="/user/img/gallery-3.jpg" data-fancybox="gallery" class="image"><img src="/user/img/gallery-3.jpg" alt="..." class="img-fluid">
                 <div class="overlay d-flex align-items-center justify-content-center"><i class="icon-search"></i></div></a></div>
         </div>
         <div class="mix col-lg-3 col-md-3 col-sm-6">
-            <div class="item"><a href="/user/img/gallery-4.jpg" data-fancybox="gallery" class="image"><img src="/source/user/img/gallery-4.jpg" alt="..." class="img-fluid">
+            <div class="item"><a href="/user/img/gallery-4.jpg" data-fancybox="gallery" class="image"><img src="/user/img/gallery-4.jpg" alt="..." class="img-fluid">
                 <div class="overlay d-flex align-items-center justify-content-center"><i class="icon-search"></i></div></a></div>
         </div>
     </div>

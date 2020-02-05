@@ -31,7 +31,7 @@ public class WebSecurityConfig extends WebSecurityConfigurerAdapter {
         http
                 .authorizeRequests()
                 // Cho phép tất cả mọi người truy cập vào các địa chỉ này
-                .antMatchers("/blogUser", "/home","/blogUser/{id}","/post/{id}","/create-comment").permitAll()
+                .antMatchers("/","/blogUser", "/home","/blogUser/{id}","/post/{id}","/create-comment","/user/**","/layout/**").permitAll()
                 // Tất cả các request khác đều cần phải xác thực mới được truy cập
                 .anyRequest().authenticated()
                 .and()

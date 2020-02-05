@@ -24,6 +24,7 @@
                                 <th>Name</th>
                                 <th>Image</th>
                                 <th>Category</th>
+                                <th>View</th>
                                 <th>Edit</th>
                                 <th>Delete date</th>
                             </tr>
@@ -33,6 +34,7 @@
                                 <th>Name</th>
                                 <th>Image</th>
                                 <th>category</th>
+                                <th>View</th>
                                 <th>Edit</th>
                                 <th>Delete</th>
                             </tr>
@@ -47,6 +49,7 @@
                                         </a>
                                     </td>
                                     <td th:text="${blog.category.name}"></td>
+                                    <td><a th:href="@{/post/__${blog.id}__ }">View More</a></td>
                                     <td><a th:href="@{/edit-blog/__${blog.id}__ }">Edit</a></td>
                                     <td><a th:href="@{/delete-blog/__${blog.id}__ }">Delete</a></td>
                                 </tr>

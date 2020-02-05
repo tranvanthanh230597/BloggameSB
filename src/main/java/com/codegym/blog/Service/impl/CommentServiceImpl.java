@@ -5,7 +5,6 @@ import com.codegym.blog.Repository.CommentRepository;
 import com.codegym.blog.Service.CommentService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Configuration;
-import org.springframework.stereotype.Repository;
 
 @Configuration
 public class CommentServiceImpl implements CommentService {
@@ -19,5 +18,20 @@ public class CommentServiceImpl implements CommentService {
     @Override
     public Iterable<Comment> findAllByBlog_Id(Long id) {
         return commentRepository.findAllByBlog_Id(id);
+    }
+
+    @Override
+    public Iterable<Comment> findAll() {
+        return commentRepository.findAll();
+    }
+
+    @Override
+    public Comment findById(Long id) {
+        return commentRepository.findById(id).get();
+    }
+
+    @Override
+    public void remove(Long id) {
+        commentRepository.deleteById(id);
     }
 }

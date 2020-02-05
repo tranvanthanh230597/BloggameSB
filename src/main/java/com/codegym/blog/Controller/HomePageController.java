@@ -6,14 +6,14 @@ import com.codegym.blog.Service.BlogService;
 import com.codegym.blog.Service.CategoryService;
 import com.codegym.blog.Service.CommentService;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.data.domain.Page;
+import org.springframework.data.domain.Pageable;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.*;
 import org.springframework.web.servlet.ModelAndView;
 
-import java.util.ArrayList;
 import java.util.Iterator;
 import java.util.Optional;
-import java.util.Random;
 
 @Controller
 public class HomePageController {
@@ -25,32 +25,34 @@ public class HomePageController {
     CommentService commentService;
     @RequestMapping(value = "/home", method = RequestMethod.GET)
     public ModelAndView home(){
-        Iterable<Blog> blogs = blogService.findAll();
+        Iterable<IHomePageBlog> blogs = blogService.homePageBlog();
         ModelAndView modelAndView = new ModelAndView("/userPage/homePage");
         modelAndView.addObject("blogList",blogs);
         return modelAndView;
     }
     @RequestMapping(value = "/blogUser", method = RequestMethod.GET)
-    public ModelAndView blog(@RequestParam("s") Optional<String> s){
-        Iterable<Blog> blogs;
+    public ModelAndView blog(@RequestParam("s") Optional<String> s, Pageable pageable){
+        Page<Blog> blogs;
+        Iterable<ICountBlog> iCountBlogs = categoryService.countBlogs();
         if (s.isPresent()) {
-            blogs = blogService.findAllByBlogNameContaining(s.get());
+            blogs = blogService.findAllByBlogNameContaining(s.get(),pageable);
         } else {
-            blogs = blogService.findAll();
+            blogs = blogService.findAll(pageable);
         }
         Iterable<Category> categories = categoryService.findAll();
         ModelAndView modelAndView = new ModelAndView("/userPage/blog");
+        modelAndView.addObject("iCountBlogs", iCountBlogs);
         modelAndView.addObject("blogList",blogs);
         modelAndView.addObject("categoryList",categories);
         return modelAndView;
     }
     @RequestMapping(value = "/blogUser/{id}", method = RequestMethod.GET)
-    public ModelAndView blogById(@PathVariable long id,@RequestParam("s") Optional<String> s) {
-        Iterable<Blog> blogs;
+    public ModelAndView blogById(@PathVariable long id,@RequestParam("s") Optional<String> s , Pageable pageable) {
+        Page<Blog> blogs;
         if (s.isPresent()) {
-            blogs = blogService.findAllByBlogNameContaining(s.get());
+            blogs = blogService.findAllByBlogNameContaining(s.get(),pageable);
         } else {
-            blogs = blogService.findAllByCategoryId(id);
+            blogs = blogService.findAllByCategoryId(id,pageable);
         }
         Iterable<ICountBlog> iCountBlogs = categoryService.countBlogs();
         if (blogs != null) {
@@ -77,6 +79,8 @@ public class HomePageController {
 
         Blog blog = blogService.findById(id);
         if (blog != null) {
+            blog.setView(blog.getView() + 1);
+            blogService.save(blog);
             Iterable<Category> categories = categoryService.findAll();
             ModelAndView modelAndView = new ModelAndView("/userPage/post");
             Blog previousBlog = blogService.previousBlog(id);

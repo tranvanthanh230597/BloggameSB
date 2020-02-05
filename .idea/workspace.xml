@@ -2,34 +2,47 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="677e042d-1da5-405e-b81f-6a2e8667d525" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/codegym/blog/Controller/UserController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/codegym/blog/Model/User.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/codegym/blog/Repository/UserRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/codegym/blog/Service/UserService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/codegym/blog/Service/impl/UserServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/codegym/blog/security/CustomUserDetails.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/codegym/blog/security/WebSecurityConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/userAdmin/create.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/userAdmin/delete.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/userAdmin/edit.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/userAdmin/list.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/codegym/blog/Model/HomePageBlog.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/codegym/blog/Model/IHomePageBlog.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/comment/delete.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/comment/edit.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/comment/list.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/BlogGameSB.iml" beforeDir="false" afterPath="$PROJECT_DIR$/BlogGameSB.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/codegym/blog/Controller/BlogController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/codegym/blog/Controller/BlogController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/codegym/blog/Controller/CommentController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/codegym/blog/Controller/CommentController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/codegym/blog/Controller/HomePageController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/codegym/blog/Controller/HomePageController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/codegym/blog/Model/Blog.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/codegym/blog/Model/Blog.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/codegym/blog/Model/Comment.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/codegym/blog/Model/Comment.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/codegym/blog/Repository/BlogRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/codegym/blog/Repository/BlogRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/codegym/blog/Repository/CategoryRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/codegym/blog/Repository/CategoryRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/codegym/blog/Repository/CommentRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/codegym/blog/Repository/CommentRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/codegym/blog/Service/CategoryService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/codegym/blog/Service/CategoryService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/codegym/blog/Service/BlogService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/codegym/blog/Service/BlogService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/codegym/blog/Service/CommentService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/codegym/blog/Service/CommentService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/codegym/blog/Service/impl/BlogServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/codegym/blog/Service/impl/BlogServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/codegym/blog/Service/impl/CategoryServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/codegym/blog/Service/impl/CategoryServiceImpl.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/codegym/blog/Service/impl/CommentServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/codegym/blog/Service/impl/CommentServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/layout/admin/tables.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/layout/admin/tables.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/codegym/blog/security/WebSecurityConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/codegym/blog/security/WebSecurityConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/blog/create.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/blog/create.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/blog/edit.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/blog/edit.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/blog/list.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/blog/list.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/layout/user/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/layout/user/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/userPage/blog.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/userPage/blog.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/userPage/homePage.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/userPage/homePage.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/userPage/post.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/userPage/post.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/META-INF/BlogGameSB.kotlin_module" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/codegym/blog/Controller/BlogController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/codegym/blog/Controller/BlogController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/codegym/blog/Controller/CommentController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/codegym/blog/Controller/CommentController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/codegym/blog/Controller/HomePageController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/codegym/blog/Controller/HomePageController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/codegym/blog/Model/Blog.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/codegym/blog/Model/Blog.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/codegym/blog/Repository/BlogRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/codegym/blog/Repository/BlogRepository.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/codegym/blog/Repository/CategoryRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/codegym/blog/Repository/CategoryRepository.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/codegym/blog/Repository/CommentRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/codegym/blog/Repository/CommentRepository.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/codegym/blog/Service/BlogService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/codegym/blog/Service/BlogService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/codegym/blog/Service/CommentService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/codegym/blog/Service/CommentService.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/codegym/blog/Service/impl/BlogServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/codegym/blog/Service/impl/BlogServiceImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/codegym/blog/Service/impl/CategoryServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/codegym/blog/Service/impl/CategoryServiceImpl.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/codegym/blog/Service/impl/CommentServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/codegym/blog/Service/impl/CommentServiceImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/codegym/blog/security/WebSecurityConfig.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/codegym/blog/security/WebSecurityConfig.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/templates/blog/create.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/templates/blog/create.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/templates/layout/user/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/templates/layout/user/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/templates/userPage/blog.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/templates/userPage/blog.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/templates/userPage/homePage.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/templates/userPage/homePage.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/templates/userPage/post.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/templates/userPage/post.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/META-INF/BlogGameSB.kotlin_module" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -89,24 +102,24 @@
     <property name="ToolWindowRun.ShowToolbar" value="false" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main/resources/templates/userAdmin" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main/resources/templates/comment" />
     <property name="restartRequiresConfirmation" value="false" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\Users\tranv\Desktop\Module02_Spring\BlogGameSB\src\main\resources\templates\userAdmin" />
-      <recent name="C:\Users\tranv\Desktop\Module02_Spring\BlogGameSB\src\main\resources\templates\userPage" />
-      <recent name="C:\Users\tranv\Desktop\Module02_Spring\BlogGameSB\src\main\resources\templates" />
-      <recent name="C:\Users\tranv\Desktop\Module02_Spring\BlogGameSB\src\main\resources\templates\category" />
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\tranv\Desktop\Module02_Spring\BlogGameSB\src\main\resources" />
+      <recent name="C:\Users\tranv\Desktop\Module02_Spring\BlogGameSB\src\main\resources\i18n" />
       <recent name="C:\Users\tranv\Desktop\Module02_Spring\BlogGameSB\src\main\resources\static" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="com.cogegym.blog.Controller" />
     </key>
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\Users\tranv\Desktop\Module02_Spring\BlogGameSB\src\main\resources" />
-      <recent name="C:\Users\tranv\Desktop\Module02_Spring\BlogGameSB\src\main\resources\i18n" />
-      <recent name="C:\Users\tranv\Desktop\Module02_Spring\BlogGameSB\src\main\resources\static" />
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\tranv\Desktop\Module02_Spring\BloggameSB\src\main\resources\templates\comment" />
+      <recent name="C:\Users\tranv\Desktop\Module02_Spring\BlogGameSB\src\main\resources\templates\userAdmin" />
+      <recent name="C:\Users\tranv\Desktop\Module02_Spring\BlogGameSB\src\main\resources\templates\userPage" />
+      <recent name="C:\Users\tranv\Desktop\Module02_Spring\BlogGameSB\src\main\resources\templates" />
+      <recent name="C:\Users\tranv\Desktop\Module02_Spring\BlogGameSB\src\main\resources\templates\category" />
     </key>
   </component>
   <component name="RunManager">
@@ -157,6 +170,25 @@
       <workItem from="1579062328998" duration="3732000" />
       <workItem from="1579072895025" duration="8064000" />
       <workItem from="1579139294541" duration="5717000" />
+      <workItem from="1579147637531" duration="2865000" />
+      <workItem from="1579157798696" duration="4075000" />
+      <workItem from="1579224549289" duration="6710000" />
+      <workItem from="1579310259546" duration="735000" />
+      <workItem from="1579916057196" duration="3226000" />
+      <workItem from="1580009062524" duration="1428000" />
+      <workItem from="1580014163622" duration="834000" />
+      <workItem from="1580016460488" duration="2364000" />
+      <workItem from="1580019243510" duration="382000" />
+      <workItem from="1580022815587" duration="609000" />
+      <workItem from="1580181214268" duration="1090000" />
+      <workItem from="1580695618099" duration="46000" />
+      <workItem from="1580695708416" duration="572000" />
+      <workItem from="1580779781274" duration="1119000" />
+      <workItem from="1580780981094" duration="224000" />
+      <workItem from="1580781571471" duration="430000" />
+      <workItem from="1580782336934" duration="7105000" />
+      <workItem from="1580885648735" duration="487000" />
+      <workItem from="1580886645005" duration="6009000" />
     </task>
     <servers />
   </component>
@@ -172,10 +204,14 @@
       <screen x="0" y="0" width="1600" height="900" />
     </state>
     <state x="254" y="99" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1600.900@0.0.1600.900" timestamp="1578885744152" />
-    <state x="561" y="93" key="#com.intellij.ide.util.MemberChooser" timestamp="1579143472314">
+    <state x="561" y="93" key="#com.intellij.ide.util.MemberChooser" timestamp="1580890707518">
       <screen x="0" y="0" width="1600" height="900" />
     </state>
-    <state x="561" y="93" key="#com.intellij.ide.util.MemberChooser/0.0.1600.900@0.0.1600.900" timestamp="1579143472314" />
+    <state x="561" y="93" key="#com.intellij.ide.util.MemberChooser/0.0.1600.900@0.0.1600.900" timestamp="1580890707518" />
+    <state x="480" y="178" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog" timestamp="1580695631524">
+      <screen x="0" y="0" width="1600" height="900" />
+    </state>
+    <state x="480" y="178" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog/0.0.1600.900@0.0.1600.900" timestamp="1580695631524" />
     <state x="608" y="300" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.packages" timestamp="1578558190262">
       <screen x="0" y="0" width="1600" height="900" />
     </state>
@@ -184,38 +220,38 @@
       <screen x="0" y="0" width="1600" height="900" />
     </state>
     <state x="467" y="140" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1600.900@0.0.1600.900" timestamp="1578985427039" />
-    <state width="1549" height="659" key="GridCell.Tab.0.bottom" timestamp="1579145096623">
+    <state width="1549" height="670" key="GridCell.Tab.0.bottom" timestamp="1580892798197">
       <screen x="0" y="0" width="1600" height="900" />
     </state>
-    <state width="1549" height="659" key="GridCell.Tab.0.bottom/0.0.1600.900@0.0.1600.900" timestamp="1579145096623" />
-    <state width="1549" height="659" key="GridCell.Tab.0.center" timestamp="1579145096622">
+    <state width="1549" height="670" key="GridCell.Tab.0.bottom/0.0.1600.900@0.0.1600.900" timestamp="1580892798197" />
+    <state width="1549" height="670" key="GridCell.Tab.0.center" timestamp="1580892798197">
       <screen x="0" y="0" width="1600" height="900" />
     </state>
-    <state width="1549" height="659" key="GridCell.Tab.0.center/0.0.1600.900@0.0.1600.900" timestamp="1579145096622" />
-    <state width="1549" height="659" key="GridCell.Tab.0.left" timestamp="1579145096622">
+    <state width="1549" height="670" key="GridCell.Tab.0.center/0.0.1600.900@0.0.1600.900" timestamp="1580892798197" />
+    <state width="1549" height="670" key="GridCell.Tab.0.left" timestamp="1580892798197">
       <screen x="0" y="0" width="1600" height="900" />
     </state>
-    <state width="1549" height="659" key="GridCell.Tab.0.left/0.0.1600.900@0.0.1600.900" timestamp="1579145096622" />
-    <state width="1549" height="659" key="GridCell.Tab.0.right" timestamp="1579145096622">
+    <state width="1549" height="670" key="GridCell.Tab.0.left/0.0.1600.900@0.0.1600.900" timestamp="1580892798197" />
+    <state width="1549" height="670" key="GridCell.Tab.0.right" timestamp="1580892798197">
       <screen x="0" y="0" width="1600" height="900" />
     </state>
-    <state width="1549" height="659" key="GridCell.Tab.0.right/0.0.1600.900@0.0.1600.900" timestamp="1579145096622" />
-    <state width="1549" height="659" key="GridCell.Tab.1.bottom" timestamp="1579145096623">
+    <state width="1549" height="670" key="GridCell.Tab.0.right/0.0.1600.900@0.0.1600.900" timestamp="1580892798197" />
+    <state width="1549" height="670" key="GridCell.Tab.1.bottom" timestamp="1580892798197">
       <screen x="0" y="0" width="1600" height="900" />
     </state>
-    <state width="1549" height="659" key="GridCell.Tab.1.bottom/0.0.1600.900@0.0.1600.900" timestamp="1579145096623" />
-    <state width="1549" height="659" key="GridCell.Tab.1.center" timestamp="1579145096623">
+    <state width="1549" height="670" key="GridCell.Tab.1.bottom/0.0.1600.900@0.0.1600.900" timestamp="1580892798197" />
+    <state width="1549" height="670" key="GridCell.Tab.1.center" timestamp="1580892798197">
       <screen x="0" y="0" width="1600" height="900" />
     </state>
-    <state width="1549" height="659" key="GridCell.Tab.1.center/0.0.1600.900@0.0.1600.900" timestamp="1579145096623" />
-    <state width="1549" height="659" key="GridCell.Tab.1.left" timestamp="1579145096623">
+    <state width="1549" height="670" key="GridCell.Tab.1.center/0.0.1600.900@0.0.1600.900" timestamp="1580892798197" />
+    <state width="1549" height="670" key="GridCell.Tab.1.left" timestamp="1580892798197">
       <screen x="0" y="0" width="1600" height="900" />
     </state>
-    <state width="1549" height="659" key="GridCell.Tab.1.left/0.0.1600.900@0.0.1600.900" timestamp="1579145096623" />
-    <state width="1549" height="659" key="GridCell.Tab.1.right" timestamp="1579145096623">
+    <state width="1549" height="670" key="GridCell.Tab.1.left/0.0.1600.900@0.0.1600.900" timestamp="1580892798197" />
+    <state width="1549" height="670" key="GridCell.Tab.1.right" timestamp="1580892798197">
       <screen x="0" y="0" width="1600" height="900" />
     </state>
-    <state width="1549" height="659" key="GridCell.Tab.1.right/0.0.1600.900@0.0.1600.900" timestamp="1579145096623" />
+    <state width="1549" height="670" key="GridCell.Tab.1.right/0.0.1600.900@0.0.1600.900" timestamp="1580892798197" />
     <state width="1549" height="380" key="GridCell.Tab.2.bottom" timestamp="1579078691767">
       <screen x="0" y="0" width="1600" height="900" />
     </state>
@@ -304,14 +340,22 @@
       <screen x="0" y="0" width="1600" height="900" />
     </state>
     <state x="292" y="119" key="Vcs.Push.Dialog.v2/0.0.1600.900@0.0.1600.900" timestamp="1579080640323" />
-    <state x="425" y="234" key="com.intellij.ide.util.TipDialog" timestamp="1579139328883">
+    <state x="425" y="234" key="com.intellij.ide.util.TipDialog" timestamp="1580781568977">
       <screen x="0" y="0" width="1600" height="900" />
     </state>
-    <state x="425" y="234" key="com.intellij.ide.util.TipDialog/0.0.1600.900@0.0.1600.900" timestamp="1579139328883" />
+    <state x="425" y="234" key="com.intellij.ide.util.TipDialog/0.0.1600.900@0.0.1600.900" timestamp="1580781568977" />
     <state x="102" y="253" width="1416" height="716" key="dock-window-1" timestamp="1578879265541">
       <screen x="0" y="0" width="1600" height="900" />
     </state>
     <state x="102" y="253" width="1416" height="716" key="dock-window-1/0.0.1600.900@0.0.1600.900" timestamp="1578879265541" />
+    <state x="432" y="124" width="736" height="652" key="find.popup" timestamp="1580783794526">
+      <screen x="0" y="0" width="1600" height="900" />
+    </state>
+    <state x="432" y="124" width="736" height="652" key="find.popup/0.0.1600.900@0.0.1600.900" timestamp="1580783794526" />
+    <state x="37" y="128" width="1526" height="693" key="new project wizard" timestamp="1579243352764">
+      <screen x="0" y="0" width="1600" height="900" />
+    </state>
+    <state x="37" y="128" width="1526" height="693" key="new project wizard/0.0.1600.900@0.0.1600.900" timestamp="1579243352764" />
     <state x="482" y="11" key="refactoring.ChangeSignatureDialog" timestamp="1579143727820">
       <screen x="0" y="0" width="1600" height="900" />
     </state>

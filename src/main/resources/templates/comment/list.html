@@ -14,44 +14,37 @@
             <div class="card mb-3">
                 <div class="card-header">
                     <i class="fas fa-table"></i>
-                    Data Table blog
+                    Data Table comment
                 </div>
                 <div class="card-body">
                     <div class="table-responsive">
                         <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
                             <thead>
                             <tr>
-                                <th>Name</th>
-                                <th>Image</th>
-                                <th>Category</th>
-                                <th>View</th>
-                                <th>Edit</th>
+                                <th>Name Blog</th>
+                                <th>Name User </th>
+                                <th>Email</th>
+                                <th>content</th>
                                 <th>Delete date</th>
                             </tr>
                             </thead>
                             <tfoot>
                             <tr>
-                                <th>Name</th>
-                                <th>Image</th>
-                                <th>category</th>
-                                <th>View</th>
-                                <th>Edit</th>
+                                <th>Name Blog</th>
+                                <th>Name User</th>
+                                <th>Email</th>
+                                <th>content</th>
                                 <th>Delete</th>
                             </tr>
                             </tfoot>
                             <tbody>
-                            <th:block th:each="blog : ${blogList}">
+                            <th:block th:each="comment : ${commentList}">
                                 <tr>
-                                    <td th:text="${blog.blogName}"></td>
-                                    <td>
-                                        <a th:href="${'images/'+blog.image}">
-                                            <span  th:text="${blog.image}"></span>
-                                        </a>
-                                    </td>
-                                    <td th:text="${blog.category.name}"></td>
-                                    <td><a th:href="@{/post/__${blog.id}__ }">View More</a></td>
-                                    <td><a th:href="@{/edit-blog/__${blog.id}__ }">Edit</a></td>
-                                    <td><a th:href="@{/delete-blog/__${blog.id}__ }">Delete</a></td>
+                                    <td th:text="${comment.blog.blogName}">
+                                    <td th:text="${comment.name}"></td>
+                                    <td th:text="${comment.email}"></td>
+                                    <td th:text="${comment.comment}"></td>
+                                    <td><a th:href="@{/delete-comment/__${comment.id}__ }">Delete</a></td>
                                 </tr>
                             </th:block>
                             </tbody>

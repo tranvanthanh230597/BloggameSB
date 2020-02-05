@@ -15,7 +15,7 @@
                 <div class="post-thumbnail"><a th:href="@{/post/__${blog.id}__}"><img src="/user/img/blog-post-1.jpeg" alt="..." class="img-fluid"></a></div>
                 <div class="post-details">
                   <div class="post-meta d-flex justify-content-between">
-                    <div class="date meta-last">20 May | 2016</div>
+                    <div class="date meta-last"><span th:text="${blog.date}"></span></div>
                     <div class="category"><a th:href="@{/blogUser/__${blog.category.id}__}"><span th:text="${blog.category.name}"></span></a></div>
                   </div><a th:href="@{/post/__${blog.id}__}">
                     <h3 class="h4" th:text="${blog.blogName}"></h3></a>
@@ -23,7 +23,7 @@
                   <footer class="post-footer d-flex align-items-center"><a href="#" class="author d-flex align-items-center flex-wrap">
                       <div class="avatar"><img src="/user/img/avatar-3.jpg" alt="..." class="img-fluid"></div>
                       <div class="title"><span>John Doe</span></div></a>
-                    <div class="date"><i class="icon-clock"></i> 2 months ago</div>
+                    <div class="date"><i class="icon-clock"></i><span th:text="${blog.date}"></span></div>
                     <div class="comments meta-last"><i class="icon-comment"></i>12</div>
                   </footer>
                 </div>
@@ -33,11 +33,21 @@
             <!-- Pagination -->
             <nav aria-label="Page navigation example">
               <ul class="pagination pagination-template d-flex justify-content-center">
-                <li class="page-item"><a href="#" class="page-link"> <i class="fa fa-angle-left"></i></a></li>
-                <li class="page-item"><a href="#" class="page-link active">1</a></li>
-                <li class="page-item"><a href="#" class="page-link">2</a></li>
-                <li class="page-item"><a href="#" class="page-link">3</a></li>
-                <li class="page-item"><a href="#" class="page-link"> <i class="fa fa-angle-right"></i></a></li>
+                <li class="page-item">
+                  <a th:href="@{'/blogUser'(page=${blogList.number - 1})}" th:if="${blogList.hasPrevious()}" class="page-link">
+                    <i class="fa fa-angle-left"></i>
+                  </a>
+                </li>
+                <li class="page-item">
+                  <a href="#" class="page-link active">
+                    <span th:text="${blogList.number + 1}"></span>
+                  </a>
+                </li>
+                <li class="page-item">
+                  <a th:href="@{'/blogUser'(page=${blogList.number + 1})}" th:if="${blogList.hasNext()}" class="page-link">
+                    <i class="fa fa-angle-right"></i>
+                  </a>
+                </li>
               </ul>
             </nav>
           </div>

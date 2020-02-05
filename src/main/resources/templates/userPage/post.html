@@ -21,14 +21,14 @@
                     <div class="avatar"><img src="/user/img/avatar-1.jpg" alt="..." class="img-fluid"></div>
                     <div class="title"><span>John Doe</span></div></a>
                   <div class="d-flex align-items-center flex-wrap">       
-                    <div class="date"><i class="icon-clock"></i> 2 months ago</div>
-                    <div class="views"><i class="icon-eye"></i> 500</div>
-                    <div class="comments meta-last"><i class="icon-comment"></i>12</div>
+                    <div class="date"><i class="icon-clock"></i><span th:text="${blog.date}"></span></div>
+                    <div class="views"><i class="icon-eye"></i> <span th:text="${blog.view}"></span></div>
+                    <div class="comments meta-last"><i class="icon-comment"></i><span th:text="${countOfComment}"></span></div>
                   </div>
                 </div>
                 <div class="post-body">
                   <p class="lead" th:text="${blog.description}"></p>
-                  <p th:text="${blog.content}"></p>
+                  <p th:utext="${blog.content}"></p>
                 </div>
                 <div class="post-tags">
                   <a th:href="@{/blogUser/__${blog.category.id}__}"><span th:text="${blog.category.name}"></span></a>

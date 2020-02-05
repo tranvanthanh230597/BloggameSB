@@ -54,4 +54,11 @@ public class CommentController {
             return new ModelAndView("/error.404");
         }
     }
+    @RequestMapping(value = "/comments", method = RequestMethod.GET)
+    public ModelAndView listBlog(){
+        Iterable<Comment> comments = commentService.findAll();
+        ModelAndView modelAndView = new ModelAndView("/comment/list");
+        modelAndView.addObject("commentList", comments);
+        return modelAndView;
+    }
 }

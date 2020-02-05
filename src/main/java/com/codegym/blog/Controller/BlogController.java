@@ -5,6 +5,7 @@ import com.codegym.blog.Service.BlogService;
 import com.codegym.blog.Service.CategoryService;
 import com.codegym.blog.Model.Blog;
 import com.codegym.blog.Model.Category;
+import com.codegym.blog.Service.CommentService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.ModelAttribute;
@@ -13,12 +14,16 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.servlet.ModelAndView;
 
+import java.util.Date;
+
 @Controller
 public class BlogController {
     @Autowired
     private BlogService blogService;
     @Autowired
     private CategoryService categoryService;
+    @Autowired
+    private CommentService commentService;
     @ModelAttribute("category")
     public Iterable<Category> categories(){
         return categoryService.findAll();
@@ -39,6 +44,7 @@ public class BlogController {
     }
     @RequestMapping(value = "/create-blog", method = RequestMethod.POST)
     public ModelAndView createCategory(@ModelAttribute("blog") Blog blog){
+        blog.setView(0);
         blogService.save(blog);
         ModelAndView modelAndView = new ModelAndView("/blog/create");
         modelAndView.addObject("blog",new Blog());

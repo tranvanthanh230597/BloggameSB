@@ -1,11 +1,14 @@
 package com.codegym.blog.Service.impl;
 
 import com.codegym.blog.Model.ICountComment;
+import com.codegym.blog.Model.IHomePageBlog;
 import com.codegym.blog.Repository.BlogRepository;
 import com.codegym.blog.Service.BlogService;
 import com.codegym.blog.Model.Blog;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Configuration;
+import org.springframework.data.domain.Page;
+import org.springframework.data.domain.Pageable;
 
 @Configuration
 public class BlogServiceImpl implements BlogService {
@@ -14,6 +17,11 @@ public class BlogServiceImpl implements BlogService {
     @Override
     public Iterable<Blog> findAll() {
         return blogRepository.findAll();
+    }
+
+    @Override
+    public Page<Blog> findAll(Pageable pageable) {
+        return blogRepository.findAll(pageable);
     }
 
     @Override
@@ -37,8 +45,8 @@ public class BlogServiceImpl implements BlogService {
     }
 
     @Override
-    public Iterable<Blog> findAllByCategoryId(Long id) {
-        return blogRepository.findAllByCategoryId(id);
+    public Page<Blog> findAllByCategoryId(Long id,Pageable pageable) {
+        return blogRepository.findAllByCategoryId(id,pageable);
     }
 
     @Override
@@ -52,12 +60,17 @@ public class BlogServiceImpl implements BlogService {
     }
 
     @Override
-    public Iterable<Blog> findAllByBlogNameContaining(String blogName) {
-        return blogRepository.findAllByBlogNameContaining(blogName);
+    public Page<Blog> findAllByBlogNameContaining(String blogName, Pageable pageable) {
+        return blogRepository.findAllByBlogNameContaining(blogName,pageable);
     }
 
     @Override
     public Iterable<ICountComment> countComment(Long blogId) {
         return blogRepository.countComment(blogId);
+    }
+
+    @Override
+    public Iterable<IHomePageBlog> homePageBlog() {
+        return blogRepository.homePageBlog();
     }
 }
