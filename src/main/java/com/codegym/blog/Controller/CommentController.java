@@ -1,6 +1,8 @@
 package com.codegym.blog.Controller;
 
 import com.codegym.blog.Model.*;
+import com.codegym.blog.Model.Interface.ICountBlog;
+import com.codegym.blog.Model.Interface.ICountComment;
 import com.codegym.blog.Service.BlogService;
 import com.codegym.blog.Service.CategoryService;
 import com.codegym.blog.Service.CommentService;

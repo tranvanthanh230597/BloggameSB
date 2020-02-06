@@ -2,47 +2,47 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="677e042d-1da5-405e-b81f-6a2e8667d525" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/codegym/blog/Model/HomePageBlog.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/codegym/blog/Model/IHomePageBlog.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/comment/delete.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/comment/edit.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/comment/list.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/codegym/blog/Model/Interface/ILastBlog.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/codegym/blog/Model/LastBlog.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/userPage/demo.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/codegym/blog/Controller/BlogController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/codegym/blog/Controller/BlogController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/codegym/blog/Controller/CommentController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/codegym/blog/Controller/CommentController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/codegym/blog/Controller/HomePageController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/codegym/blog/Controller/HomePageController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/codegym/blog/Model/Blog.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/codegym/blog/Model/Blog.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/codegym/blog/Model/Comment.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/codegym/blog/Model/Comment.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/codegym/blog/Model/CountBlog.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/codegym/blog/Model/CountBlog.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/codegym/blog/Model/CountComment.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/codegym/blog/Model/CountComment.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/codegym/blog/Model/HomePageBlog.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/codegym/blog/Model/HomePageBlog.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/codegym/blog/Model/ICountBlog.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/codegym/blog/Model/Interface/ICountBlog.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/codegym/blog/Model/ICountComment.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/codegym/blog/Model/Interface/ICountComment.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/codegym/blog/Model/IHomePageBlog.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/codegym/blog/Model/Interface/IHomePageBlog.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/codegym/blog/Repository/BlogRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/codegym/blog/Repository/BlogRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/codegym/blog/Repository/CategoryRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/codegym/blog/Repository/CategoryRepository.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/codegym/blog/Service/BlogService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/codegym/blog/Service/BlogService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/codegym/blog/Service/CommentService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/codegym/blog/Service/CommentService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/codegym/blog/Service/CategoryService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/codegym/blog/Service/CategoryService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/codegym/blog/Service/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/codegym/blog/Service/UserService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/codegym/blog/Service/impl/BlogServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/codegym/blog/Service/impl/BlogServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/codegym/blog/Service/impl/CommentServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/codegym/blog/Service/impl/CommentServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/codegym/blog/Service/impl/CategoryServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/codegym/blog/Service/impl/CategoryServiceImpl.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/codegym/blog/security/WebSecurityConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/codegym/blog/security/WebSecurityConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/blog/create.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/blog/create.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/blog/edit.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/blog/edit.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/blog/list.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/blog/list.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/templates/layout/user/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/layout/user/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/templates/userPage/blog.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/userPage/blog.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/templates/userPage/homePage.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/userPage/homePage.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/templates/userPage/post.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/userPage/post.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/META-INF/BlogGameSB.kotlin_module" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/codegym/blog/Controller/BlogController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/codegym/blog/Controller/BlogController.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/codegym/blog/Controller/CommentController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/codegym/blog/Controller/CommentController.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/codegym/blog/Controller/HomePageController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/codegym/blog/Controller/HomePageController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/codegym/blog/Model/Blog.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/codegym/blog/Model/Blog.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/codegym/blog/Model/CountBlog.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/codegym/blog/Model/CountBlog.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/codegym/blog/Model/CountComment.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/codegym/blog/Model/CountComment.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/codegym/blog/Model/ICountBlog.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/codegym/blog/Model/ICountComment.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/codegym/blog/Repository/BlogRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/codegym/blog/Repository/BlogRepository.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/codegym/blog/Repository/CategoryRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/codegym/blog/Repository/CategoryRepository.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/codegym/blog/Service/BlogService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/codegym/blog/Service/BlogService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/codegym/blog/Service/CommentService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/codegym/blog/Service/CommentService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/codegym/blog/Service/CategoryService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/codegym/blog/Service/CategoryService.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/codegym/blog/Service/impl/BlogServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/codegym/blog/Service/impl/BlogServiceImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/codegym/blog/Service/impl/CommentServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/codegym/blog/Service/impl/CommentServiceImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/codegym/blog/Service/impl/CategoryServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/codegym/blog/Service/impl/CategoryServiceImpl.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/codegym/blog/security/WebSecurityConfig.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/codegym/blog/security/WebSecurityConfig.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/templates/blog/create.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/templates/blog/create.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/templates/layout/user/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/templates/layout/user/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/templates/userPage/blog.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/templates/userPage/blog.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/templates/userPage/homePage.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/templates/userPage/homePage.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/templates/userPage/post.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/templates/userPage/post.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/META-INF/BlogGameSB.kotlin_module" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -67,9 +67,9 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Kotlin File" />
-        <option value="HTML File" />
         <option value="Interface" />
         <option value="Class" />
+        <option value="HTML File" />
       </list>
     </option>
   </component>
@@ -188,7 +188,9 @@
       <workItem from="1580781571471" duration="430000" />
       <workItem from="1580782336934" duration="7105000" />
       <workItem from="1580885648735" duration="487000" />
-      <workItem from="1580886645005" duration="6009000" />
+      <workItem from="1580886645005" duration="8358000" />
+      <workItem from="1580951867637" duration="8034000" />
+      <workItem from="1580974244107" duration="294000" />
     </task>
     <servers />
   </component>
@@ -204,10 +206,10 @@
       <screen x="0" y="0" width="1600" height="900" />
     </state>
     <state x="254" y="99" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1600.900@0.0.1600.900" timestamp="1578885744152" />
-    <state x="561" y="93" key="#com.intellij.ide.util.MemberChooser" timestamp="1580890707518">
+    <state x="561" y="93" key="#com.intellij.ide.util.MemberChooser" timestamp="1580959029340">
       <screen x="0" y="0" width="1600" height="900" />
     </state>
-    <state x="561" y="93" key="#com.intellij.ide.util.MemberChooser/0.0.1600.900@0.0.1600.900" timestamp="1580890707518" />
+    <state x="561" y="93" key="#com.intellij.ide.util.MemberChooser/0.0.1600.900@0.0.1600.900" timestamp="1580959029340" />
     <state x="480" y="178" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog" timestamp="1580695631524">
       <screen x="0" y="0" width="1600" height="900" />
     </state>
@@ -216,134 +218,134 @@
       <screen x="0" y="0" width="1600" height="900" />
     </state>
     <state x="608" y="300" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.packages/0.0.1600.900@0.0.1600.900" timestamp="1578558190262" />
-    <state x="467" y="140" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1578985427039">
+    <state x="467" y="140" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1580958556655">
       <screen x="0" y="0" width="1600" height="900" />
     </state>
-    <state x="467" y="140" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1600.900@0.0.1600.900" timestamp="1578985427039" />
-    <state width="1549" height="670" key="GridCell.Tab.0.bottom" timestamp="1580892798197">
+    <state x="467" y="140" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1600.900@0.0.1600.900" timestamp="1580958556655" />
+    <state width="1549" height="380" key="GridCell.Tab.0.bottom" timestamp="1580961595163">
       <screen x="0" y="0" width="1600" height="900" />
     </state>
-    <state width="1549" height="670" key="GridCell.Tab.0.bottom/0.0.1600.900@0.0.1600.900" timestamp="1580892798197" />
-    <state width="1549" height="670" key="GridCell.Tab.0.center" timestamp="1580892798197">
+    <state width="1549" height="380" key="GridCell.Tab.0.bottom/0.0.1600.900@0.0.1600.900" timestamp="1580961595163" />
+    <state width="1549" height="380" key="GridCell.Tab.0.center" timestamp="1580961595161">
       <screen x="0" y="0" width="1600" height="900" />
     </state>
-    <state width="1549" height="670" key="GridCell.Tab.0.center/0.0.1600.900@0.0.1600.900" timestamp="1580892798197" />
-    <state width="1549" height="670" key="GridCell.Tab.0.left" timestamp="1580892798197">
+    <state width="1549" height="380" key="GridCell.Tab.0.center/0.0.1600.900@0.0.1600.900" timestamp="1580961595161" />
+    <state width="1549" height="380" key="GridCell.Tab.0.left" timestamp="1580961595161">
       <screen x="0" y="0" width="1600" height="900" />
     </state>
-    <state width="1549" height="670" key="GridCell.Tab.0.left/0.0.1600.900@0.0.1600.900" timestamp="1580892798197" />
-    <state width="1549" height="670" key="GridCell.Tab.0.right" timestamp="1580892798197">
+    <state width="1549" height="380" key="GridCell.Tab.0.left/0.0.1600.900@0.0.1600.900" timestamp="1580961595161" />
+    <state width="1549" height="380" key="GridCell.Tab.0.right" timestamp="1580961595162">
       <screen x="0" y="0" width="1600" height="900" />
     </state>
-    <state width="1549" height="670" key="GridCell.Tab.0.right/0.0.1600.900@0.0.1600.900" timestamp="1580892798197" />
-    <state width="1549" height="670" key="GridCell.Tab.1.bottom" timestamp="1580892798197">
+    <state width="1549" height="380" key="GridCell.Tab.0.right/0.0.1600.900@0.0.1600.900" timestamp="1580961595162" />
+    <state width="1549" height="380" key="GridCell.Tab.1.bottom" timestamp="1580961595166">
       <screen x="0" y="0" width="1600" height="900" />
     </state>
-    <state width="1549" height="670" key="GridCell.Tab.1.bottom/0.0.1600.900@0.0.1600.900" timestamp="1580892798197" />
-    <state width="1549" height="670" key="GridCell.Tab.1.center" timestamp="1580892798197">
+    <state width="1549" height="380" key="GridCell.Tab.1.bottom/0.0.1600.900@0.0.1600.900" timestamp="1580961595166" />
+    <state width="1549" height="380" key="GridCell.Tab.1.center" timestamp="1580961595164">
       <screen x="0" y="0" width="1600" height="900" />
     </state>
-    <state width="1549" height="670" key="GridCell.Tab.1.center/0.0.1600.900@0.0.1600.900" timestamp="1580892798197" />
-    <state width="1549" height="670" key="GridCell.Tab.1.left" timestamp="1580892798197">
+    <state width="1549" height="380" key="GridCell.Tab.1.center/0.0.1600.900@0.0.1600.900" timestamp="1580961595164" />
+    <state width="1549" height="380" key="GridCell.Tab.1.left" timestamp="1580961595163">
       <screen x="0" y="0" width="1600" height="900" />
     </state>
-    <state width="1549" height="670" key="GridCell.Tab.1.left/0.0.1600.900@0.0.1600.900" timestamp="1580892798197" />
-    <state width="1549" height="670" key="GridCell.Tab.1.right" timestamp="1580892798197">
+    <state width="1549" height="380" key="GridCell.Tab.1.left/0.0.1600.900@0.0.1600.900" timestamp="1580961595163" />
+    <state width="1549" height="380" key="GridCell.Tab.1.right" timestamp="1580961595165">
       <screen x="0" y="0" width="1600" height="900" />
     </state>
-    <state width="1549" height="670" key="GridCell.Tab.1.right/0.0.1600.900@0.0.1600.900" timestamp="1580892798197" />
-    <state width="1549" height="380" key="GridCell.Tab.2.bottom" timestamp="1579078691767">
+    <state width="1549" height="380" key="GridCell.Tab.1.right/0.0.1600.900@0.0.1600.900" timestamp="1580961595165" />
+    <state width="1549" height="380" key="GridCell.Tab.2.bottom" timestamp="1580961595168">
       <screen x="0" y="0" width="1600" height="900" />
     </state>
-    <state width="1549" height="380" key="GridCell.Tab.2.bottom/0.0.1600.900@0.0.1600.900" timestamp="1579078691767" />
-    <state width="1549" height="380" key="GridCell.Tab.2.center" timestamp="1579078691767">
+    <state width="1549" height="380" key="GridCell.Tab.2.bottom/0.0.1600.900@0.0.1600.900" timestamp="1580961595168" />
+    <state width="1549" height="380" key="GridCell.Tab.2.center" timestamp="1580961595167">
       <screen x="0" y="0" width="1600" height="900" />
     </state>
-    <state width="1549" height="380" key="GridCell.Tab.2.center/0.0.1600.900@0.0.1600.900" timestamp="1579078691767" />
-    <state width="1549" height="380" key="GridCell.Tab.2.left" timestamp="1579078691767">
+    <state width="1549" height="380" key="GridCell.Tab.2.center/0.0.1600.900@0.0.1600.900" timestamp="1580961595167" />
+    <state width="1549" height="380" key="GridCell.Tab.2.left" timestamp="1580961595167">
       <screen x="0" y="0" width="1600" height="900" />
     </state>
-    <state width="1549" height="380" key="GridCell.Tab.2.left/0.0.1600.900@0.0.1600.900" timestamp="1579078691767" />
-    <state width="1549" height="380" key="GridCell.Tab.2.right" timestamp="1579078691767">
+    <state width="1549" height="380" key="GridCell.Tab.2.left/0.0.1600.900@0.0.1600.900" timestamp="1580961595167" />
+    <state width="1549" height="380" key="GridCell.Tab.2.right" timestamp="1580961595167">
       <screen x="0" y="0" width="1600" height="900" />
     </state>
-    <state width="1549" height="380" key="GridCell.Tab.2.right/0.0.1600.900@0.0.1600.900" timestamp="1579078691767" />
-    <state width="1549" height="380" key="GridCell.Tab.3.bottom" timestamp="1579078691768">
+    <state width="1549" height="380" key="GridCell.Tab.2.right/0.0.1600.900@0.0.1600.900" timestamp="1580961595167" />
+    <state width="1549" height="380" key="GridCell.Tab.3.bottom" timestamp="1580961595169">
       <screen x="0" y="0" width="1600" height="900" />
     </state>
-    <state width="1549" height="380" key="GridCell.Tab.3.bottom/0.0.1600.900@0.0.1600.900" timestamp="1579078691768" />
-    <state width="1549" height="380" key="GridCell.Tab.3.center" timestamp="1579078691767">
+    <state width="1549" height="380" key="GridCell.Tab.3.bottom/0.0.1600.900@0.0.1600.900" timestamp="1580961595169" />
+    <state width="1549" height="380" key="GridCell.Tab.3.center" timestamp="1580961595169">
       <screen x="0" y="0" width="1600" height="900" />
     </state>
-    <state width="1549" height="380" key="GridCell.Tab.3.center/0.0.1600.900@0.0.1600.900" timestamp="1579078691767" />
-    <state width="1549" height="380" key="GridCell.Tab.3.left" timestamp="1579078691767">
+    <state width="1549" height="380" key="GridCell.Tab.3.center/0.0.1600.900@0.0.1600.900" timestamp="1580961595169" />
+    <state width="1549" height="380" key="GridCell.Tab.3.left" timestamp="1580961595168">
       <screen x="0" y="0" width="1600" height="900" />
     </state>
-    <state width="1549" height="380" key="GridCell.Tab.3.left/0.0.1600.900@0.0.1600.900" timestamp="1579078691767" />
-    <state width="1549" height="380" key="GridCell.Tab.3.right" timestamp="1579078691767">
+    <state width="1549" height="380" key="GridCell.Tab.3.left/0.0.1600.900@0.0.1600.900" timestamp="1580961595168" />
+    <state width="1549" height="380" key="GridCell.Tab.3.right" timestamp="1580961595169">
       <screen x="0" y="0" width="1600" height="900" />
     </state>
-    <state width="1549" height="380" key="GridCell.Tab.3.right/0.0.1600.900@0.0.1600.900" timestamp="1579078691767" />
-    <state width="1549" height="380" key="GridCell.Tab.4.bottom" timestamp="1579078691768">
+    <state width="1549" height="380" key="GridCell.Tab.3.right/0.0.1600.900@0.0.1600.900" timestamp="1580961595169" />
+    <state width="1549" height="380" key="GridCell.Tab.4.bottom" timestamp="1580961595171">
       <screen x="0" y="0" width="1600" height="900" />
     </state>
-    <state width="1549" height="380" key="GridCell.Tab.4.bottom/0.0.1600.900@0.0.1600.900" timestamp="1579078691768" />
-    <state width="1549" height="380" key="GridCell.Tab.4.center" timestamp="1579078691768">
+    <state width="1549" height="380" key="GridCell.Tab.4.bottom/0.0.1600.900@0.0.1600.900" timestamp="1580961595171" />
+    <state width="1549" height="380" key="GridCell.Tab.4.center" timestamp="1580961595170">
       <screen x="0" y="0" width="1600" height="900" />
     </state>
-    <state width="1549" height="380" key="GridCell.Tab.4.center/0.0.1600.900@0.0.1600.900" timestamp="1579078691768" />
-    <state width="1549" height="380" key="GridCell.Tab.4.left" timestamp="1579078691768">
+    <state width="1549" height="380" key="GridCell.Tab.4.center/0.0.1600.900@0.0.1600.900" timestamp="1580961595170" />
+    <state width="1549" height="380" key="GridCell.Tab.4.left" timestamp="1580961595170">
       <screen x="0" y="0" width="1600" height="900" />
     </state>
-    <state width="1549" height="380" key="GridCell.Tab.4.left/0.0.1600.900@0.0.1600.900" timestamp="1579078691768" />
-    <state width="1549" height="380" key="GridCell.Tab.4.right" timestamp="1579078691768">
+    <state width="1549" height="380" key="GridCell.Tab.4.left/0.0.1600.900@0.0.1600.900" timestamp="1580961595170" />
+    <state width="1549" height="380" key="GridCell.Tab.4.right" timestamp="1580961595171">
       <screen x="0" y="0" width="1600" height="900" />
     </state>
-    <state width="1549" height="380" key="GridCell.Tab.4.right/0.0.1600.900@0.0.1600.900" timestamp="1579078691768" />
-    <state width="1549" height="380" key="GridCell.Tab.5.bottom" timestamp="1579078691769">
+    <state width="1549" height="380" key="GridCell.Tab.4.right/0.0.1600.900@0.0.1600.900" timestamp="1580961595171" />
+    <state width="1549" height="380" key="GridCell.Tab.5.bottom" timestamp="1580961595172">
       <screen x="0" y="0" width="1600" height="900" />
     </state>
-    <state width="1549" height="380" key="GridCell.Tab.5.bottom/0.0.1600.900@0.0.1600.900" timestamp="1579078691769" />
-    <state width="1549" height="380" key="GridCell.Tab.5.center" timestamp="1579078691768">
+    <state width="1549" height="380" key="GridCell.Tab.5.bottom/0.0.1600.900@0.0.1600.900" timestamp="1580961595172" />
+    <state width="1549" height="380" key="GridCell.Tab.5.center" timestamp="1580961595172">
       <screen x="0" y="0" width="1600" height="900" />
     </state>
-    <state width="1549" height="380" key="GridCell.Tab.5.center/0.0.1600.900@0.0.1600.900" timestamp="1579078691768" />
-    <state width="1549" height="380" key="GridCell.Tab.5.left" timestamp="1579078691768">
+    <state width="1549" height="380" key="GridCell.Tab.5.center/0.0.1600.900@0.0.1600.900" timestamp="1580961595172" />
+    <state width="1549" height="380" key="GridCell.Tab.5.left" timestamp="1580961595171">
       <screen x="0" y="0" width="1600" height="900" />
     </state>
-    <state width="1549" height="380" key="GridCell.Tab.5.left/0.0.1600.900@0.0.1600.900" timestamp="1579078691768" />
-    <state width="1549" height="380" key="GridCell.Tab.5.right" timestamp="1579078691769">
+    <state width="1549" height="380" key="GridCell.Tab.5.left/0.0.1600.900@0.0.1600.900" timestamp="1580961595171" />
+    <state width="1549" height="380" key="GridCell.Tab.5.right" timestamp="1580961595172">
       <screen x="0" y="0" width="1600" height="900" />
     </state>
-    <state width="1549" height="380" key="GridCell.Tab.5.right/0.0.1600.900@0.0.1600.900" timestamp="1579078691769" />
-    <state width="1549" height="380" key="GridCell.Tab.6.bottom" timestamp="1579078691769">
+    <state width="1549" height="380" key="GridCell.Tab.5.right/0.0.1600.900@0.0.1600.900" timestamp="1580961595172" />
+    <state width="1549" height="380" key="GridCell.Tab.6.bottom" timestamp="1580961595174">
       <screen x="0" y="0" width="1600" height="900" />
     </state>
-    <state width="1549" height="380" key="GridCell.Tab.6.bottom/0.0.1600.900@0.0.1600.900" timestamp="1579078691769" />
-    <state width="1549" height="380" key="GridCell.Tab.6.center" timestamp="1579078691769">
+    <state width="1549" height="380" key="GridCell.Tab.6.bottom/0.0.1600.900@0.0.1600.900" timestamp="1580961595174" />
+    <state width="1549" height="380" key="GridCell.Tab.6.center" timestamp="1580961595173">
       <screen x="0" y="0" width="1600" height="900" />
     </state>
-    <state width="1549" height="380" key="GridCell.Tab.6.center/0.0.1600.900@0.0.1600.900" timestamp="1579078691769" />
-    <state width="1549" height="380" key="GridCell.Tab.6.left" timestamp="1579078691769">
+    <state width="1549" height="380" key="GridCell.Tab.6.center/0.0.1600.900@0.0.1600.900" timestamp="1580961595173" />
+    <state width="1549" height="380" key="GridCell.Tab.6.left" timestamp="1580961595173">
       <screen x="0" y="0" width="1600" height="900" />
     </state>
-    <state width="1549" height="380" key="GridCell.Tab.6.left/0.0.1600.900@0.0.1600.900" timestamp="1579078691769" />
-    <state width="1549" height="380" key="GridCell.Tab.6.right" timestamp="1579078691769">
+    <state width="1549" height="380" key="GridCell.Tab.6.left/0.0.1600.900@0.0.1600.900" timestamp="1580961595173" />
+    <state width="1549" height="380" key="GridCell.Tab.6.right" timestamp="1580961595173">
       <screen x="0" y="0" width="1600" height="900" />
     </state>
-    <state width="1549" height="380" key="GridCell.Tab.6.right/0.0.1600.900@0.0.1600.900" timestamp="1579078691769" />
+    <state width="1549" height="380" key="GridCell.Tab.6.right/0.0.1600.900@0.0.1600.900" timestamp="1580961595173" />
     <state x="217" y="24" key="Maven.ArtifactSearchDialog" timestamp="1579057371690">
       <screen x="0" y="0" width="1600" height="900" />
     </state>
     <state x="217" y="24" key="Maven.ArtifactSearchDialog/0.0.1600.900@0.0.1600.900" timestamp="1579057371690" />
-    <state x="292" y="119" key="Vcs.Push.Dialog.v2" timestamp="1579080640323">
+    <state x="292" y="119" key="Vcs.Push.Dialog.v2" timestamp="1580893785611">
       <screen x="0" y="0" width="1600" height="900" />
     </state>
-    <state x="292" y="119" key="Vcs.Push.Dialog.v2/0.0.1600.900@0.0.1600.900" timestamp="1579080640323" />
-    <state x="425" y="234" key="com.intellij.ide.util.TipDialog" timestamp="1580781568977">
+    <state x="292" y="119" key="Vcs.Push.Dialog.v2/0.0.1600.900@0.0.1600.900" timestamp="1580893785611" />
+    <state x="425" y="234" key="com.intellij.ide.util.TipDialog" timestamp="1580974261925">
       <screen x="0" y="0" width="1600" height="900" />
     </state>
-    <state x="425" y="234" key="com.intellij.ide.util.TipDialog/0.0.1600.900@0.0.1600.900" timestamp="1580781568977" />
+    <state x="425" y="234" key="com.intellij.ide.util.TipDialog/0.0.1600.900@0.0.1600.900" timestamp="1580974261925" />
     <state x="102" y="253" width="1416" height="716" key="dock-window-1" timestamp="1578879265541">
       <screen x="0" y="0" width="1600" height="900" />
     </state>
@@ -360,10 +362,10 @@
       <screen x="0" y="0" width="1600" height="900" />
     </state>
     <state x="482" y="11" key="refactoring.ChangeSignatureDialog/0.0.1600.900@0.0.1600.900" timestamp="1579143727820" />
-    <state x="379" y="-1" width="840" height="1034" key="search.everywhere.popup" timestamp="1578967141629">
+    <state x="379" y="-1" width="840" height="1034" key="search.everywhere.popup" timestamp="1580954843862">
       <screen x="0" y="0" width="1600" height="900" />
     </state>
-    <state x="379" y="-1" width="840" height="1034" key="search.everywhere.popup/0.0.1600.900@0.0.1600.900" timestamp="1578967141629" />
+    <state x="379" y="-1" width="840" height="1034" key="search.everywhere.popup/0.0.1600.900@0.0.1600.900" timestamp="1580954843862" />
   </component>
   <component name="XDebuggerManager">
     <watches-manager>

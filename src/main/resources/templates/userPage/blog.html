@@ -19,7 +19,7 @@
                     <div class="category"><a th:href="@{/blogUser/__${blog.category.id}__}"><span th:text="${blog.category.name}"></span></a></div>
                   </div><a th:href="@{/post/__${blog.id}__}">
                     <h3 class="h4" th:text="${blog.blogName}"></h3></a>
-                  <p class="text-muted" th:text="${blog.description}"></p>
+                  <p class="text-muted" th:utext="${blog.description}"></p>
                   <footer class="post-footer d-flex align-items-center"><a href="#" class="author d-flex align-items-center flex-wrap">
                       <div class="avatar"><img src="/user/img/avatar-3.jpg" alt="..." class="img-fluid"></div>
                       <div class="title"><span>John Doe</span></div></a>

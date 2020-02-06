@@ -1,7 +1,8 @@
 package com.codegym.blog.Service.impl;
 
-import com.codegym.blog.Model.ICountComment;
-import com.codegym.blog.Model.IHomePageBlog;
+import com.codegym.blog.Model.Interface.ICountComment;
+import com.codegym.blog.Model.Interface.IHomePageBlog;
+import com.codegym.blog.Model.LastBlog;
 import com.codegym.blog.Repository.BlogRepository;
 import com.codegym.blog.Service.BlogService;
 import com.codegym.blog.Model.Blog;
@@ -46,7 +47,7 @@ public class BlogServiceImpl implements BlogService {
 
     @Override
     public Page<Blog> findAllByCategoryId(Long id,Pageable pageable) {
-        return blogRepository.findAllByCategoryId(id,pageable);
+        return blogRepository.findAllByCategoryIdOrderByIdDesc(id,pageable);
     }
 
     @Override
@@ -72,5 +73,20 @@ public class BlogServiceImpl implements BlogService {
     @Override
     public Iterable<IHomePageBlog> homePageBlog() {
         return blogRepository.homePageBlog();
+    }
+
+    @Override
+    public Page<Blog> findAllByOrderByIdDesc(Pageable pageable) {
+        return blogRepository.findAllByOrderByIdDesc(pageable);
+    }
+
+    @Override
+    public Page<Blog> findAllByBlogNameContainingOrderByIdDesc(String blogName, Pageable pageable) {
+        return blogRepository.findAllByBlogNameContainingOrderByIdDesc(blogName,pageable);
+    }
+
+    @Override
+    public Iterable<LastBlog> lastBlog() {
+        return blogRepository.lastBlog();
     }
 }

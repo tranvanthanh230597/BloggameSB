@@ -1,7 +1,7 @@
 package com.codegym.blog.Service;
 
 import com.codegym.blog.Model.Category;
-import com.codegym.blog.Model.ICountBlog;
+import com.codegym.blog.Model.Interface.ICountBlog;
 import org.springframework.stereotype.Service;
 
 

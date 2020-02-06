@@ -1,7 +1,7 @@
 package com.codegym.blog.Service.impl;
 
 import com.codegym.blog.Model.Category;
-import com.codegym.blog.Model.ICountBlog;
+import com.codegym.blog.Model.Interface.ICountBlog;
 import com.codegym.blog.Repository.BlogRepository;
 import com.codegym.blog.Repository.CategoryRepository;
 import com.codegym.blog.Service.CategoryService;

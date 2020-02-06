@@ -1,11 +1,11 @@
 package com.codegym.blog.Repository;
 
 import com.codegym.blog.Model.Blog;
-import com.codegym.blog.Model.ICountComment;
-import com.codegym.blog.Model.IHomePageBlog;
+import com.codegym.blog.Model.Interface.ICountComment;
+import com.codegym.blog.Model.Interface.IHomePageBlog;
+import com.codegym.blog.Model.LastBlog;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;
-import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.data.jpa.repository.Query;
 import org.springframework.data.repository.PagingAndSortingRepository;
 import org.springframework.stereotype.Repository;
@@ -13,8 +13,10 @@ import org.springframework.stereotype.Repository;
 @Repository
 public interface BlogRepository extends PagingAndSortingRepository<Blog,Long> {
     void deleteAllByCategory_Id(Long id);
-    Page<Blog> findAllByCategoryId(Long id,Pageable pageable);
+    Page<Blog> findAllByOrderByIdDesc(Pageable pageable);
+    Page<Blog> findAllByCategoryIdOrderByIdDesc(Long id,Pageable pageable);
     Page<Blog> findAllByBlogNameContaining(String blogName, Pageable pageable);
+    Page<Blog> findAllByBlogNameContainingOrderByIdDesc(String blogName, Pageable pageable);
     @Query(
             value = "SELECT * FROM bloggame.blogs \n" +
                     "where id < ?1\n" +
@@ -45,4 +47,12 @@ public interface BlogRepository extends PagingAndSortingRepository<Blog,Long> {
             nativeQuery = true
     )
     Iterable<IHomePageBlog> homePageBlog();
+
+    @Query(
+            value = "SELECT blogs.blog_name as name , blogs.id as id, blogs.view as view, count(comments.id) as count \n" +
+                    "FROM blogs left JOIN comments on blogs.id = comments.blog_id\n" +
+                    "group by blogs.id\n" +
+                    "limit 3",
+            nativeQuery = true)
+    Iterable<LastBlog> lastBlog();
 }

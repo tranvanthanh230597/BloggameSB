@@ -1,5 +1,7 @@
 package com.codegym.blog.Model;
 
+import com.codegym.blog.Model.Interface.ICountBlog;
+
 public class CountBlog implements ICountBlog {
     private String name;
     private Long count;

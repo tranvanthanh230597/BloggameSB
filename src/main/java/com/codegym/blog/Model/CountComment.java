@@ -1,5 +1,7 @@
 package com.codegym.blog.Model;
 
+import com.codegym.blog.Model.Interface.ICountComment;
+
 public class CountComment implements ICountComment {
     private Long count;
 

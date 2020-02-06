@@ -1,6 +1,8 @@
 package com.codegym.blog.Model;
 
-public class HomePageBlog implements IHomePageBlog{
+import com.codegym.blog.Model.Interface.IHomePageBlog;
+
+public class HomePageBlog implements IHomePageBlog {
     private Long id;
     private String blogName;
     private String description;

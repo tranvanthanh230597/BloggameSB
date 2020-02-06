@@ -2,6 +2,9 @@ package com.codegym.blog.Controller;
 
 
 import com.codegym.blog.Model.*;
+import com.codegym.blog.Model.Interface.ICountBlog;
+import com.codegym.blog.Model.Interface.ICountComment;
+import com.codegym.blog.Model.Interface.IHomePageBlog;
 import com.codegym.blog.Service.BlogService;
 import com.codegym.blog.Service.CategoryService;
 import com.codegym.blog.Service.CommentService;
@@ -35,9 +38,9 @@ public class HomePageController {
         Page<Blog> blogs;
         Iterable<ICountBlog> iCountBlogs = categoryService.countBlogs();
         if (s.isPresent()) {
-            blogs = blogService.findAllByBlogNameContaining(s.get(),pageable);
+            blogs = blogService.findAllByBlogNameContainingOrderByIdDesc(s.get(),pageable);
         } else {
-            blogs = blogService.findAll(pageable);
+            blogs = blogService.findAllByOrderByIdDesc(pageable);
         }
         Iterable<Category> categories = categoryService.findAll();
         ModelAndView modelAndView = new ModelAndView("/userPage/blog");
@@ -50,7 +53,7 @@ public class HomePageController {
     public ModelAndView blogById(@PathVariable long id,@RequestParam("s") Optional<String> s , Pageable pageable) {
         Page<Blog> blogs;
         if (s.isPresent()) {
-            blogs = blogService.findAllByBlogNameContaining(s.get(),pageable);
+            blogs = blogService.findAllByBlogNameContainingOrderByIdDesc(s.get(),pageable);
         } else {
             blogs = blogService.findAllByCategoryId(id,pageable);
         }
@@ -98,5 +101,14 @@ public class HomePageController {
         } else {
             return new ModelAndView("/error.404");
         }
+    }
+    @RequestMapping(value = "/demo", method = RequestMethod.GET)
+    public ModelAndView demo(){
+        Iterable<LastBlog> lastBlogs = blogService.lastBlog();
+        ModelAndView modelAndView = new ModelAndView("/userPage/demo");
+        modelAndView.addObject("lastBlogs", lastBlogs);
+        return modelAndView;
+
+
     }
 }

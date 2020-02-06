@@ -1,7 +1,7 @@
 package com.codegym.blog.Repository;
 
 import com.codegym.blog.Model.Category;
-import com.codegym.blog.Model.ICountBlog;
+import com.codegym.blog.Model.Interface.ICountBlog;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.data.jpa.repository.Query;
 import org.springframework.stereotype.Repository;

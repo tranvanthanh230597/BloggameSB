@@ -1,4 +1,4 @@
-package com.codegym.blog.Model;
+package com.codegym.blog.Model.Interface;
 
 public interface IHomePageBlog {
     Long getId();
