@@ -1,6 +1,7 @@
 package com.codegym.blog.Controller;
 
 
+import com.codegym.blog.Model.BlogUpload;
 import com.codegym.blog.Service.BlogService;
 import com.codegym.blog.Service.CategoryService;
 import com.codegym.blog.Model.Blog;
@@ -12,9 +13,10 @@ import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
+import org.springframework.web.multipart.MultipartFile;
 import org.springframework.web.servlet.ModelAndView;
 
-import java.util.Date;
+import java.io.IOException;
 
 @Controller
 public class BlogController {
@@ -37,17 +39,29 @@ public class BlogController {
         return modelAndView;
     }
     @RequestMapping(value = "/create-blog",method = RequestMethod.GET)
-    public ModelAndView showCreateForm(){
+    public ModelAndView showCreateForm(@ModelAttribute("blogUpload")BlogUpload blogUpload){
         ModelAndView modelAndView = new ModelAndView("/blog/create");
         modelAndView.addObject("blog",new Blog());
+        modelAndView.addObject("blogUpload", new BlogUpload());
         return modelAndView;
     }
     @RequestMapping(value = "/create-blog", method = RequestMethod.POST)
-    public ModelAndView createCategory(@ModelAttribute("blog") Blog blog){
-        blog.setView(0);
-        blogService.save(blog);
+    public ModelAndView createCategory(@ModelAttribute("blogUpload")BlogUpload blogUpload) throws IOException {
         ModelAndView modelAndView = new ModelAndView("/blog/create");
-        modelAndView.addObject("blog",new Blog());
+        MultipartFile file = blogUpload.getFile();
+        blogService.uploadFile(file);
+        String imageName = file.getOriginalFilename();
+        Blog blog = new Blog();
+        blog.setBlogName(blogUpload.getBlogName());
+        blog.setView(0);
+        blog.setComments(blogUpload.getComments());
+        blog.setCategory(blogUpload.getCategory());
+        blog.setContent(blogUpload.getContent());
+        blog.setDate(blogUpload.getDate());
+        blog.setDescription(blogUpload.getDescription());
+        blog.setImage(imageName);
+        blogService.save(blog);
+        modelAndView.addObject("blogUpload",new BlogUpload());
         modelAndView.addObject("message", "New blog created successfully");
         return modelAndView;
     }

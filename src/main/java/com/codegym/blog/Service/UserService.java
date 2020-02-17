@@ -5,12 +5,6 @@ import org.springframework.security.core.userdetails.UserDetailsService;
 import org.springframework.stereotype.Service;
 
 @Service
-public interface UserService extends UserDetailsService {
-    Iterable<User> findAll();
+public interface UserService extends UserDetailsService,BaseService<User> {
 
-    User findById(Long id);
-
-    void save(User user);
-
-    void remove(Long id);
 }

@@ -10,9 +10,9 @@ import org.springframework.stereotype.Repository;
 @Repository
 public interface CategoryRepository extends JpaRepository<Category,Long> {
     @Query(
-            value = "SELECT categories.id as id, categories.name as name , count(blogs.id) as count \n" +
-                    "FROM categories left join blogs on categories.id = blogs.category_id\n" +
-                    "group by categories.id",
+            value = "SELECT categories.id AS id, categories.name AS name , count(blogs.id) AS count \n" +
+                    "FROM categories LEFT JOIN blogs ON categories.id = blogs.category_id\n" +
+                    "GROUP BY categories.id",
             nativeQuery = true)
     Iterable<ICountBlog> countBlogs();
 }

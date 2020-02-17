@@ -19,39 +19,39 @@ public interface BlogRepository extends PagingAndSortingRepository<Blog,Long> {
     Page<Blog> findAllByBlogNameContainingOrderByIdDesc(String blogName, Pageable pageable);
     @Query(
             value = "SELECT * FROM bloggame.blogs \n" +
-                    "where id < ?1\n" +
-                    "order by id desc\n" +
-                    "limit 1",
+                    "WHERE id < ?1\n" +
+                    "ORDER BY id DESC\n" +
+                    "LIMIT 1",
             nativeQuery = true)
     Blog  previousBlog(Long id);
 
     @Query(
             value = "SELECT * FROM bloggame.blogs \n" +
-                    "where id > ?1\n" +
-                    "limit 1\n",
+                    "WHERE id > ?1\n" +
+                    "LIMIT 1\n",
             nativeQuery = true)
     Blog  nextBlog(Long id);
 
 
     @Query(
-            value = "SELECT count(comments.id) as count \n" +
-                    "FROM blogs left join comments on blogs.id = comments.blog_id\n" +
-                    "where blogs.id = ?1\n",
+            value = "SELECT count(comments.id) AS count \n" +
+                    "FROM blogs LEFT JOIN comments ON blogs.id = comments.blog_id\n" +
+                    "WHERE blogs.id = ?1\n",
             nativeQuery = true)
     Iterable<ICountComment> countComment(Long blogId);
     @Query(
-            value = "SELECT blogs.id as id , blogs.blog_name as blogName, blogs.view as view, blogs.description as description, blogs.date as date, categories.id as categoryId, categories.name as categoryName\n" +
-                    "FROM blogs inner join categories on blogs.category_id = categories.id\n" +
+            value = "SELECT blogs.id AS id , blogs.blog_name AS blogName, blogs.view AS view, blogs.description AS description, blogs.date AS date, categories.id AS categoryId, categories.name AS categoryName, blogs.image AS image \n" +
+                    "FROM blogs INNER JOIN categories ON blogs.category_id = categories.id\n" +
                     "ORDER BY blogs.id DESC \n" +
-                    "limit 5 \n",
+                    "LIMIT 5 \n",
             nativeQuery = true
     )
     Iterable<IHomePageBlog> homePageBlog();
 
     @Query(
-            value = "SELECT blogs.blog_name as name , blogs.id as id, blogs.view as view, count(comments.id) as count \n" +
-                    "FROM blogs left JOIN comments on blogs.id = comments.blog_id\n" +
-                    "group by blogs.id\n" +
+            value = "SELECT blogs.blog_name AS name , blogs.id AS id, blogs.view AS view, count(comments.id) AS count \n" +
+                    "FROM blogs LEFT JOIN comments ON blogs.id = comments.blog_id\n" +
+                    "GROUP BY blogs.id\n" +
                     "limit 3",
             nativeQuery = true)
     Iterable<LastBlog> lastBlog();

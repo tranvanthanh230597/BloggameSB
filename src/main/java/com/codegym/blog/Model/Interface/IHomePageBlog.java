@@ -8,4 +8,5 @@ public interface IHomePageBlog {
     Long getCategoryId();
     String getCategoryName();
     Integer getView();
+    String getImage();
 }

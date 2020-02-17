@@ -44,9 +44,7 @@
                                 <tr>
                                     <td th:text="${blog.blogName}"></td>
                                     <td>
-                                        <a th:href="${'images/'+blog.image}">
-                                            <span  th:text="${blog.image}"></span>
-                                        </a>
+                                        <img width="150px" height="150px" th:src="'/user/img/' + ${blog.image}"/>
                                     </td>
                                     <td th:text="${blog.category.name}"></td>
                                     <td><a th:href="@{/post/__${blog.id}__ }">View More</a></td>

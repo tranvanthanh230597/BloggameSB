@@ -10,8 +10,9 @@ public class HomePageBlog implements IHomePageBlog {
     private Long categoryId;
     private String categoryName;
     private Integer view;
+    private String image;
 
-    public HomePageBlog(Long id, String blogName, String description, String date, Long categoryId, String categoryName,Integer view) {
+    public HomePageBlog(Long id, String blogName, String description, String date, Long categoryId, String categoryName,Integer view,String image) {
         this.id = id;
         this.blogName = blogName;
         this.description = description;
@@ -19,9 +20,19 @@ public class HomePageBlog implements IHomePageBlog {
         this.categoryId = categoryId;
         this.categoryName = categoryName;
         this.view = view;
+        this.image = image;
     }
 
     public HomePageBlog() {
+    }
+
+    @Override
+    public String getImage() {
+        return image;
+    }
+
+    public void setImage(String image) {
+        this.image = image;
     }
 
     @Override

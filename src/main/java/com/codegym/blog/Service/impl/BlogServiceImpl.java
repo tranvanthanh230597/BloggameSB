@@ -10,6 +10,10 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;
+import org.springframework.web.multipart.MultipartFile;
+
+import java.io.File;
+import java.io.IOException;
 
 @Configuration
 public class BlogServiceImpl implements BlogService {
@@ -88,5 +92,10 @@ public class BlogServiceImpl implements BlogService {
     @Override
     public Iterable<LastBlog> lastBlog() {
         return blogRepository.lastBlog();
+    }
+
+    @Override
+    public void uploadFile(MultipartFile file) throws IOException {
+        file.transferTo(new File("C:\\Users\\tranv\\Desktop\\Module02_Spring\\BloggameSB\\src\\main\\resources\\static\\source\\images\\ " + file.getOriginalFilename()));
     }
 }
