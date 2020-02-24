@@ -96,6 +96,6 @@ public class BlogServiceImpl implements BlogService {
 
     @Override
     public void uploadFile(MultipartFile file) throws IOException {
-        file.transferTo(new File("C:\\Users\\tranv\\Desktop\\Module02_Spring\\BloggameSB\\src\\main\\resources\\static\\source\\images\\ " + file.getOriginalFilename()));
+        file.transferTo(new File("C:\\Users\\tranv\\Desktop\\Module02_Spring\\BloggameSB\\src\\main\\resources\\static\\images\\" + file.getOriginalFilename()));
     }
 }
