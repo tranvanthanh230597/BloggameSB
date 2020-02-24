@@ -2,52 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="677e042d-1da5-405e-b81f-6a2e8667d525" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/codegym/blog/Model/BlogUpload.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/codegym/blog/Service/BaseService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/user/img/IMG_4002.JPG" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/user/img/demo.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ .env" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Procfile" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/system.properties" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/BlogGameSB.iml" beforeDir="false" afterPath="$PROJECT_DIR$/BlogGameSB.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/codegym/blog/Controller/BlogController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/codegym/blog/Controller/BlogController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/codegym/blog/Model/HomePageBlog.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/codegym/blog/Model/HomePageBlog.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/codegym/blog/Model/Interface/IHomePageBlog.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/codegym/blog/Model/Interface/IHomePageBlog.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/codegym/blog/Repository/BlogRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/codegym/blog/Repository/BlogRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/codegym/blog/Repository/CategoryRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/codegym/blog/Repository/CategoryRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/codegym/blog/Service/BlogService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/codegym/blog/Service/BlogService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/codegym/blog/Service/CategoryService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/codegym/blog/Service/CategoryService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/codegym/blog/Service/CommentService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/codegym/blog/Service/CommentService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/codegym/blog/Service/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/codegym/blog/Service/UserService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/codegym/blog/Service/impl/BlogServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/codegym/blog/Service/impl/BlogServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/codegym/blog/security/WebSecurityConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/codegym/blog/security/WebSecurityConfig.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/blog/create.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/blog/create.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/blog/list.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/blog/list.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/userPage/blog.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/userPage/blog.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/userPage/homePage.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/userPage/homePage.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/userPage/post.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/userPage/post.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/codegym/blog/Controller/BlogController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/codegym/blog/Controller/BlogController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/codegym/blog/Controller/CategoryController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/codegym/blog/Controller/CategoryController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/codegym/blog/Controller/CommentController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/codegym/blog/Controller/CommentController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/codegym/blog/Controller/HomePageController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/codegym/blog/Controller/HomePageController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/codegym/blog/Controller/UserController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/codegym/blog/Controller/UserController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/codegym/blog/Repository/BlogRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/codegym/blog/Repository/BlogRepository.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/codegym/blog/Repository/CategoryRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/codegym/blog/Repository/CategoryRepository.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/codegym/blog/Service/BlogService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/codegym/blog/Service/BlogService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/codegym/blog/Service/CategoryService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/codegym/blog/Service/CategoryService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/codegym/blog/Service/CommentService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/codegym/blog/Service/CommentService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/codegym/blog/Service/UserService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/codegym/blog/Service/UserService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/codegym/blog/Service/impl/BlogServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/codegym/blog/Service/impl/BlogServiceImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/codegym/blog/Service/impl/CategoryServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/codegym/blog/Service/impl/CategoryServiceImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/codegym/blog/Service/impl/CommentServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/codegym/blog/Service/impl/CommentServiceImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/codegym/blog/Service/impl/UserServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/codegym/blog/Service/impl/UserServiceImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/codegym/blog/security/WebSecurityConfig.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/codegym/blog/security/WebSecurityConfig.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/templates/blog/create.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/templates/blog/create.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/templates/blog/list.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/templates/blog/list.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/templates/userPage/blog.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/templates/userPage/blog.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/templates/userPage/homePage.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/templates/userPage/homePage.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/templates/userPage/post.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/templates/userPage/post.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -109,25 +68,25 @@
     <property name="ToolWindowRun.ShowToolbar" value="false" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main/resources/static/source/images" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="restartRequiresConfirmation" value="false" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\tranv\Desktop\Module02_Spring\BloggameSB" />
+      <recent name="C:\Users\tranv\Desktop\Module02_Spring\BloggameSB\src\main\resources\static\source\images" />
+      <recent name="C:\Users\tranv\Desktop\Module02_Spring\BloggameSB\src\main\resources\static\user\img" />
+      <recent name="C:\Users\tranv\Desktop\Module02_Spring\BloggameSB\src\main\resources\static\image" />
+      <recent name="C:\Users\tranv\Desktop\Module02_Spring\BloggameSB\src\main\resources\static\source" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.cogegym.blog.Controller" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\tranv\Desktop\Module02_Spring\BloggameSB\src\main\resources\static\user\img" />
       <recent name="C:\Users\tranv\Desktop\Module02_Spring\BlogGameSB\src\main\resources" />
       <recent name="C:\Users\tranv\Desktop\Module02_Spring\BlogGameSB\src\main\resources\i18n" />
       <recent name="C:\Users\tranv\Desktop\Module02_Spring\BlogGameSB\src\main\resources\static" />
-    </key>
-    <key name="CopyClassDialog.RECENTS_KEY">
-      <recent name="com.cogegym.blog.Controller" />
-    </key>
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\Users\tranv\Desktop\Module02_Spring\BloggameSB\src\main\resources\static\source\images" />
-      <recent name="C:\Users\tranv\Desktop\Module02_Spring\BloggameSB\src\main\resources\static\user\img" />
-      <recent name="C:\Users\tranv\Desktop\Module02_Spring\BloggameSB\src\main\resources\static\image" />
-      <recent name="C:\Users\tranv\Desktop\Module02_Spring\BloggameSB\src\main\resources\static\source" />
-      <recent name="C:\Users\tranv\Desktop\Module02_Spring\BloggameSB\src\main\resources\templates\comment" />
     </key>
   </component>
   <component name="RunManager">
@@ -210,6 +169,11 @@
       <workItem from="1581665542273" duration="443000" />
       <workItem from="1581666124884" duration="1292000" />
       <workItem from="1581667655947" duration="1874000" />
+      <workItem from="1581921926516" duration="1694000" />
+      <workItem from="1582161882420" duration="778000" />
+      <workItem from="1582246824781" duration="142000" />
+      <workItem from="1582276953963" duration="1710000" />
+      <workItem from="1582529347692" duration="127000" />
     </task>
     <servers />
   </component>
@@ -365,10 +329,10 @@
       <screen x="0" y="0" width="1600" height="900" />
     </state>
     <state x="292" y="119" key="Vcs.Push.Dialog.v2/0.0.1600.900@0.0.1600.900" timestamp="1580893785611" />
-    <state x="425" y="234" key="com.intellij.ide.util.TipDialog" timestamp="1581922075894">
+    <state x="425" y="234" key="com.intellij.ide.util.TipDialog" timestamp="1582276955109">
       <screen x="0" y="0" width="1600" height="900" />
     </state>
-    <state x="425" y="234" key="com.intellij.ide.util.TipDialog/0.0.1600.900@0.0.1600.900" timestamp="1581922075894" />
+    <state x="425" y="234" key="com.intellij.ide.util.TipDialog/0.0.1600.900@0.0.1600.900" timestamp="1582276955109" />
     <state x="102" y="253" width="1416" height="716" key="dock-window-1" timestamp="1578879265541">
       <screen x="0" y="0" width="1600" height="900" />
     </state>
@@ -377,10 +341,10 @@
       <screen x="0" y="0" width="1600" height="900" />
     </state>
     <state x="432" y="124" width="736" height="652" key="find.popup/0.0.1600.900@0.0.1600.900" timestamp="1580783794526" />
-    <state x="37" y="128" width="1526" height="693" key="new project wizard" timestamp="1581582411972">
+    <state x="37" y="128" width="1526" height="693" key="new project wizard" timestamp="1582278490812">
       <screen x="0" y="0" width="1600" height="900" />
     </state>
-    <state x="37" y="128" width="1526" height="693" key="new project wizard/0.0.1600.900@0.0.1600.900" timestamp="1581582411972" />
+    <state x="37" y="128" width="1526" height="693" key="new project wizard/0.0.1600.900@0.0.1600.900" timestamp="1582278490812" />
     <state x="482" y="11" key="refactoring.ChangeSignatureDialog" timestamp="1579143727820">
       <screen x="0" y="0" width="1600" height="900" />
     </state>
