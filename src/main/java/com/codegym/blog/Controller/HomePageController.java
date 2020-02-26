@@ -29,8 +29,10 @@ public class HomePageController {
     @RequestMapping(value = "/home", method = RequestMethod.GET)
     public ModelAndView home(){
         Iterable<IHomePageBlog> blogs = blogService.homePageBlog();
+        Iterable<Blog> latestBlog = blogService.latestBlog();
         ModelAndView modelAndView = new ModelAndView("/userPage/homePage");
         modelAndView.addObject("blogList",blogs);
+        modelAndView.addObject("latestBlogList",latestBlog);
         return modelAndView;
     }
     @RequestMapping(value = "/blogUser", method = RequestMethod.GET)

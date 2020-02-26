@@ -33,7 +33,7 @@
                     </div>
                 </div>
             </div>
-            <div class="image col-lg-5"><img th:src="'/user/img/' + ${blog.image}" alt="..."></div>
+            <div class="image col-lg-5"><img th:src="'/images/' + ${blog.image}" alt="..."></div>
         </div>
         </th:block>
     </div>
@@ -56,39 +56,27 @@
             <p class="text-big">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
         </header>
         <div class="row">
-            <div class="post col-md-4">
-                <div class="post-thumbnail"><a href="post.html"><img src="/user/img/blog-1.jpg" alt="..." class="img-fluid"></a></div>
+            <th:block th:each="blog : ${latestBlogList}">
+                <div class="post col-md-4">
+                <div class="post-thumbnail">
+                    <a th:href="@{/post/__${blog.id}__}">
+                        <img th:src="'/images/' + ${blog.image}" alt="..." class="img-fluid">
+                    </a>
+                </div>
                 <div class="post-details">
                     <div class="post-meta d-flex justify-content-between">
-                        <div class="date">20 May | 2016</div>
-                        <div class="category"><a href="#">Business</a></div>
-                    </div><a href="post.html">
-                    <h3 class="h4">Ways to remember your important ideas</h3></a>
-                    <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore.</p>
+                        <div class="date"><span th:text="${blog.date}"></span></div>
+                        <div class="category">
+                            <a th:href="@{/blogUser/__${blog.category.id}__}">
+                                <span th:text="${blog.category.name}"></span>
+                            </a>
+                        </div>
+                    </div><a th:href="@{/post/__${blog.id}__}">
+                    <h3 class="h4" th:text="${blog.blogName}"></h3></a>
+                    <p class="text-muted" th:utext="${blog.description}"></p>
                 </div>
             </div>
-            <div class="post col-md-4">
-                <div class="post-thumbnail"><a href="post.html"><img src="/user/img/blog-2.jpg" alt="..." class="img-fluid"></a></div>
-                <div class="post-details">
-                    <div class="post-meta d-flex justify-content-between">
-                        <div class="date">20 May | 2016</div>
-                        <div class="category"><a href="#">Technology</a></div>
-                    </div><a href="post.html">
-                    <h3 class="h4">Diversity in Engineering: Effect on Questions</h3></a>
-                    <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore.</p>
-                </div>
-            </div>
-            <div class="post col-md-4">
-                <div class="post-thumbnail"><a href="post.html"><img src="/user/img/blog-3.jpg" alt="..." class="img-fluid"></a></div>
-                <div class="post-details">
-                    <div class="post-meta d-flex justify-content-between">
-                        <div class="date">20 May | 2016</div>
-                        <div class="category"><a href="#">Financial</a></div>
-                    </div><a href="post.html">
-                    <h3 class="h4">Alberto Savoia Can Teach You About Interior</h3></a>
-                    <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore.</p>
-                </div>
-            </div>
+            </th:block>
         </div>
     </div>
 </section>

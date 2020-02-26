@@ -49,10 +49,16 @@ public interface BlogRepository extends PagingAndSortingRepository<Blog,Long> {
     Iterable<IHomePageBlog> homePageBlog();
 
     @Query(
-            value = "SELECT blogs.blog_name AS name , blogs.id AS id, blogs.view AS view, count(comments.id) AS count \n" +
+            value = "SELECT blogs.blog_name AS name , blogs.id AS id, blogs.view AS view, COUNT(comments.id) AS count \n" +
                     "FROM blogs LEFT JOIN comments ON blogs.id = comments.blog_id\n" +
-                    "GROUP BY blogs.id\n" +
+                    "GROUP BY blogs.id \n" +
                     "limit 3",
             nativeQuery = true)
     Iterable<LastBlog> lastBlog();
+    @Query(
+            value = "SELECT * FROM bloggame.blogs\n" +
+                    "ORDER BY id DESC \n" +
+                    "limit 3",
+            nativeQuery = true)
+    Iterable<Blog> latestBlog();
 }

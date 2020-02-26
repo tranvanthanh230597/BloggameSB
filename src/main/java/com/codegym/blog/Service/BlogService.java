@@ -18,6 +18,7 @@ public interface BlogService extends BaseService<Blog>{
     Page<Blog> findAllByCategoryId(Long id,Pageable pageable);
     Blog  previousBlog(Long id);
     Blog  nextBlog(Long id);
+    Iterable<Blog> latestBlog();
     Page<Blog> findAllByBlogNameContaining(String blogName, Pageable pageable);
     Iterable<ICountComment> countComment(Long blogId);
     Iterable<IHomePageBlog> homePageBlog();
@@ -25,5 +26,6 @@ public interface BlogService extends BaseService<Blog>{
     Page<Blog> findAllByBlogNameContainingOrderByIdDesc(String blogName, Pageable pageable);
     Iterable<LastBlog> lastBlog();
     void uploadFile(MultipartFile file) throws IOException;
+
 
 }

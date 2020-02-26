@@ -15,6 +15,7 @@
                 <div class="card-header">
                     <i class="fas fa-table"></i>
                     Data Table blog
+                    <a class="btn btn-primary" href="/create-blog" role="button">Create Blog</a>
                 </div>
                 <div class="card-body">
                     <div class="table-responsive">
@@ -42,12 +43,16 @@
                             <tbody>
                             <th:block th:each="blog : ${blogList}">
                                 <tr>
-                                    <td th:text="${blog.blogName}"></td>
+                                    <td>
+                                        <a th:href="@{/post/__${blog.id}__ }">
+                                            <span th:text="${blog.blogName}"></span>
+                                        </a>
+                                    </td>
                                     <td>
                                         <img width="150px" height="150px" th:src="'/images/' + ${blog.image}"/>
                                     </td>
                                     <td th:text="${blog.category.name}"></td>
-                                    <td><a th:href="@{/post/__${blog.id}__ }">View More</a></td>
+                                    <td th:text="${blog.view}"></td>
                                     <td><a th:href="@{/edit-blog/__${blog.id}__ }">Edit</a></td>
                                     <td><a th:href="@{/delete-blog/__${blog.id}__ }">Delete</a></td>
                                 </tr>

@@ -65,6 +65,11 @@ public class BlogServiceImpl implements BlogService {
     }
 
     @Override
+    public Iterable<Blog> latestBlog() {
+        return blogRepository.latestBlog();
+    }
+
+    @Override
     public Page<Blog> findAllByBlogNameContaining(String blogName, Pageable pageable) {
         return blogRepository.findAllByBlogNameContaining(blogName,pageable);
     }
