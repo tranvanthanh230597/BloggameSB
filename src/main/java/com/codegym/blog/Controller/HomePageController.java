@@ -33,6 +33,7 @@ public class HomePageController {
         ModelAndView modelAndView = new ModelAndView("/userPage/homePage");
         modelAndView.addObject("blogList",blogs);
         modelAndView.addObject("latestBlogList",latestBlog);
+        modelAndView.addObject("infoContact",new Email());
         return modelAndView;
     }
     @RequestMapping(value = "/blogUser", method = RequestMethod.GET)
